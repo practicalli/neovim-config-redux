@@ -60,6 +60,8 @@
 (nvim.set_keymap :n :<leader><tab>":bprevious<cr>" {:noremap true})
 
 ;; Projects and files
+;; Find files in a project
+(util.lnnoremap :ff":Telescope file_browser")
 (nvim.set_keymap :n :<leader>fs ":write<cr>" {:noremap true})
 (nvim.set_keymap :n :<leader>fc ":saveas<cr>" {:noremap true})
 (nvim.set_keymap :n :<leader>ft":NvimTreeToggle<cr>" {:noremap true})

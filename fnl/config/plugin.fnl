@@ -86,11 +86,16 @@
    :mod :nvim-tree}
 
   :nvim-telescope/telescope.nvim
-  {:requires [:nvim-telescope/telescope-ui-select.nvim
+  {:requires [:nvim-lua/popup.nvim
+              :nvim-lua/plenary.nvim
+
+              ;; Extensions
+              :nvim-telescope/telescope-file-browser.nvim
+              :LinArcX/telescope-env.nvim
+              :nvim-telescope/telescope-packer.nvim
               :nvim-telescope/telescope-project.nvim
               :TC72/telescope-tele-tabby.nvim
-              :nvim-lua/popup.nvim
-              :nvim-lua/plenary.nvim]
+              :nvim-telescope/telescope-ui-select.nvim]
    :mod :telescope}
 
   ;; Documentation
