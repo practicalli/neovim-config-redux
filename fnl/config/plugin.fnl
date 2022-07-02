@@ -138,7 +138,8 @@
   :guns/vim-sexp {:mod :sexp}
 
   :tpope/vim-abolish {}
-  :tpope/vim-commentary {}
+  ;; :tpope/vim-commentary {}
+  :terrortylor/nvim-comment {:mod :nvim-comment}
 
   ;; Database Client :DB
   :tpope/vim-dadbod {}

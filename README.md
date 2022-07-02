@@ -67,13 +67,12 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
  - [lualine](https://github.com/nvim-lualine/lualine.nvim) *neovim statusline plugin written in pure lua*
  - [luasnip](https://github.com/L3MON4D3/LuaSnip) *Snippet Engine for Neovim written in Lua.*
  - [startup](https://github.com/startup-nvim/startup.nvim) *startup themes - using default dashboard*
-- [tpope/vim-commentary](https://github.com/tpope/vim-commentary) *toggles a comment for lines, visual selections or for motions*
 - [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim) *GitHub Issues & PRs via GitHub CLI*
-- [tpope/commentary.vim](https://github.com/tpope/vim-commentary) *toggle line comments*
 - [Todo Comments](https://github.com/folke/todo-comments.nvim) *Highlight and search for todo comments (TODO, NOTE, WARNING, FIX, HACK, PERF - specify in options)*
 - [neogit](https://github.com/TimUntersberger/neogit) *Magit clone - WIP with lots of useful features already*
 - [octo](https://github.com/pwntester/octo.nvim) *GitHub Issues and Pull Requests*
 - [orgmode](https://github.com/nvim-orgmode/orgmode) *excellent note taking and agenda management*
+ - [nvim-comment](https://github.com/terrortylor/nvim-comment) *toggle line comments with visual selection and motions* (replaces [tpope/commentary.vim](https://github.com/tpope/vim-commentary))
 
 Supporting plugins
 - https://github.com/folke/trouble.nvim supports Todo Comments
@@ -87,7 +86,6 @@ Supporting plugins
 
 * https://github.com/gbprod/yanky.nvim#%EF%B8%8F-yank-ring - cycle through kill ring (and other stuff)
 
- - [ ] [terrortylor/nvim-comment](https://github.com/terrortylor/nvim-comment)
  - [ ] [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim) motions (replacement for lightspeed), alternative to easy-motions ??
 
  - [ ] [kevinhwang91/rnvimr](https://github.com/kevinhwang91/rnvimr) *ranger in a floating window*
