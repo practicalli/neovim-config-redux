@@ -68,33 +68,28 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
  - [lualine](https://github.com/nvim-lualine/lualine.nvim) *neovim statusline plugin written in pure lua*
  - [luasnip](https://github.com/L3MON4D3/LuaSnip) *Snippet Engine for Neovim written in Lua.*
  - [startup](https://github.com/startup-nvim/startup.nvim) *startup themes - using default dashboard*
-- [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim) *GitHub Issues & PRs via GitHub CLI*
-- [Todo Comments](https://github.com/folke/todo-comments.nvim) *Highlight and search for todo comments (TODO, NOTE, WARNING, FIX, HACK, PERF - specify in options)*
-- [neogit](https://github.com/TimUntersberger/neogit) *Magit clone - WIP with lots of useful features already*
-- [octo](https://github.com/pwntester/octo.nvim) *GitHub Issues and Pull Requests*
-- [orgmode](https://github.com/nvim-orgmode/orgmode) *excellent note taking and agenda management*
+ - [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim) *GitHub Issues & PRs via GitHub CLI*
  - [nvim-comment](https://github.com/terrortylor/nvim-comment) *toggle line comments with visual selection and motions* (replaces [tpope/commentary.vim](https://github.com/tpope/vim-commentary))
+ - [Todo Comments](https://github.com/folke/todo-comments.nvim) *Highlight and search for todo comments (TODO, NOTE, WARNING, FIX, HACK, PERF - specify in options)*
+ - [neogit](https://github.com/TimUntersberger/neogit) *Magit clone - WIP with lots of useful features already*
+ - [octo](https://github.com/pwntester/octo.nvim) *GitHub Issues and Pull Requests*
  - [orgmode](https://github.com/nvim-orgmode/orgmode) *excellent note taking and agenda management*
+ - [tpope/fugitive](https://github.com/tpope/vim-fugitive) *Git command line* installed, no key bindings yet (using neogit instead - although may need both)
 
 Supporting plugins
 - https://github.com/folke/trouble.nvim supports Todo Comments
 - https://github.com/folke/lsp-colors.nvim
 
-<!-- TODO: plugins added to configure -->
-
-- [] [tpope/fugitive](https://github.com/tpope/vim-fugitive) *Git command line* installed, no key bindings yet (using neogit instead)
-
 <!-- TODO: plugins to add -->
 
 * https://github.com/gbprod/yanky.nvim#%EF%B8%8F-yank-ring - cycle through kill ring (and other stuff)
 
- - [ ] [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim) motions (replacement for lightspeed), alternative to easy-motions ??
-
- - [ ] [kevinhwang91/rnvimr](https://github.com/kevinhwang91/rnvimr) *ranger in a floating window*
- - [ ] [dadbod.vim](https://github.com/tpope/vim-dadbod) interact with database - connect `:DB postgresql:///connection-string` or run a single expression
- - [ ] [vim-dadbob-ui](https://github.com/kristijanhusak/vim-dadbod-ui) - navigate database connections and save queries
- - [ ] [heroku.vim](https://github.com/tpope/vim-heroku) wraps the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) and provides tab complete of commands - https://github.com/tpope/vim-heroku/blob/master/doc/heroku.txt
- - [ ] [p00f/nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) *treesitter based rainbow parens*
+ - [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim) motions (replacement for lightspeed), alternative to easy-motions ??
+ - [kevinhwang91/rnvimr](https://github.com/kevinhwang91/rnvimr) *ranger in a floating window*
+ - [dadbod.vim](https://github.com/tpope/vim-dadbod) interact with database - connect `:DB postgresql:///connection-string` or run a single expression
+ - [vim-dadbob-ui](https://github.com/kristijanhusak/vim-dadbod-ui) - navigate database connections and save queries
+ - [heroku.vim](https://github.com/tpope/vim-heroku) wraps the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) and provides tab complete of commands
+ - [p00f/nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) *treesitter based rainbow parens*
 
  - https://github.com/ruifm/gitlinker.nvim share github links
 
@@ -363,3 +358,8 @@ Creative Commons Attribution Share-Alike 4.0 International
 `:h` menu followed by feature name that help is needed for, e.g. `:h conjure`
 
 `<leader>h/` list and preview help via telescope
+
+
+## Visual select tips
+
+`ve` select to end of word
