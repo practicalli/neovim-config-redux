@@ -63,11 +63,12 @@
 ;; Define a key to name the substitution (shown if there is an error)
 ;; Define a Lua pattern to match against, followed by its replacement value
 ;; Reference: Lua patterns: https://www.lua.org/pil/20.2.html
+;; NOTE: substitution not required on :develop branch from 2022-07-02
 ;; Evaluation forms commented with Reader Macro comment #_
-(set nvim.g.conjure#eval#gsubs {:eval-reader-comment ["#_" ""]})
+;; (set nvim.g.conjure#eval#gsubs {:eval-reader-comment ["#_" ""]})
 ;; Treat comment as do expression - No longer required
 ;; (set nvim.g.conjure#eval#gsubs {:do-comment ["^%(comment[%s%c]" "(do "]}) ; eval comment as do
-(set nvim.g.conjure#eval#gsubs {:do-comment ["^%(comment[%s%c]" "(do "]}) ; eval comment as do
+;; (set nvim.g.conjure#eval#gsubs {:do-comment ["^%(comment[%s%c]" "(do "]}) ; eval comment as do
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Key bindings / mappings

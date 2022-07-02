@@ -135,7 +135,7 @@
   :mg979/vim-visual-multi {}
 
   ;; repl tools
-  :Olical/conjure {:branch :master :mod :conjure}
+  :Olical/conjure {:branch :develop :mod :conjure}
   :clojure-vim/clojure.vim {}
   :clojure-vim/vim-jack-in {}
 
