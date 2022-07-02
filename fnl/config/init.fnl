@@ -116,7 +116,7 @@
        ;shared clipboard
        :clipboard "unnamedplus"
        ;show invisible characters
-       :list true
+       :list false
        :listchars (str.join "," ["tab:▶-" "trail:•" "extends:»" "precedes:«" "eol:¬"])
        ;tabs is space
        :expandtab true
