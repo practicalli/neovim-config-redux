@@ -41,6 +41,13 @@
   ;; Development related icons
   :kyazdani42/nvim-web-devicons {}
 
+  ;; Startup screen
+  :startup-nvim/startup.nvim
+  {:requires [:nvim-telescope/telescope.nvim
+              :nvim-lua/plenary.nvim]
+   :mod :startup}
+
+
   ;; Pretty list for all your troubles
   :folke/trouble.nvim {:mod :trouble}
   ;; Add missing colours for themes
