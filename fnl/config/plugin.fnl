@@ -110,6 +110,9 @@
   {:requires [:nvim-lua/plenary.nvim]
    :mod :diffview}
 
+  :lewis6991/gitsigns.nvim
+  {:tag :release
+   :mod :gitsigns}
 
   ;; GitHub Issues and Pull Requests
   :pwntester/octo.nvim

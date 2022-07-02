@@ -75,6 +75,7 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
  - [octo](https://github.com/pwntester/octo.nvim) *GitHub Issues and Pull Requests*
  - [orgmode](https://github.com/nvim-orgmode/orgmode) *excellent note taking and agenda management*
  - [tpope/fugitive](https://github.com/tpope/vim-fugitive) *Git command line* installed, no key bindings yet (using neogit instead - although may need both)
+ - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) *Git highlights in gutter - adding fugitive controls*
 
 Supporting plugins
 - https://github.com/folke/trouble.nvim supports Todo Comments
