@@ -2,6 +2,8 @@
 
 A Fennel configuration for Neovim 0.7.0 or greater, with a focus on Clojure REPL driven development with Conjure as well as general development workflow. A complete configuration to transform your Neovim in a simple, powerful and fun to use Clojure IDE
 
+The key bindings (mappings) are evolving and trying to follow a Spacemacs style mnemonic approach (`SPC f f` to open a file browser). A which-key text menu is also provided to help discover key bindings.  Using mnemonic keybinding will make Neovim more accessible to Spacemacs users (like myself) and those less familiar with the ways of interacting with a Vim editor, i.e. the `:` commands approach.
+
 
 ## Derived work
 
