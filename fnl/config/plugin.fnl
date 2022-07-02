@@ -108,6 +108,9 @@
               :sindrets/diffview.nvim]
    :mod :neogit}
 
+; text alignment
+  :junegunn/vim-easy-align {:mod :easy-align}
+
 
   ;; repl tools
   :Olical/conjure {:branch :master :mod :conjure}
