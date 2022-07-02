@@ -3,7 +3,7 @@
              lsp lspconfig
              cmplsp cmp_nvim_lsp}})
 
-;symbols to show for lsp diagnostics
+;; gutter icons for lsp diagnostics
 (defn define-signs
   [prefix]
   (let [error (.. prefix "SignError")
@@ -15,11 +15,7 @@
   (vim.fn.sign_define info  {:text "" :texthl info})
   (vim.fn.sign_define hint  {:text "" :texthl hint})))
 
-(if (= (nvim.fn.has "nvim-0.6") 1)
-  (define-signs "Diagnostic")
-  (define-signs "LspDiagnostics"))
-
-;server features
+;; Configure server features
 (let [handlers {"textDocument/publishDiagnostics"
                 (vim.lsp.with
                   vim.lsp.diagnostic.on_publish_diagnostics
@@ -56,7 +52,7 @@
                     (nvim.buf_set_keymap bufnr :n :<leader>lr ":lua require('telescope.builtin').lsp_references()<cr>" {:noremap true})
                     (nvim.buf_set_keymap bufnr :n :<leader>li ":lua require('telescope.builtin').lsp_implementations()<cr>" {:noremap true})))]
 
-  ;; Clojure
+  ;; Clojure LSP Server setup
   (lsp.clojure_lsp.setup {:on_attach on_attach
                           :handlers handlers
                           :capabilities capabilities}))

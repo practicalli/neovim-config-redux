@@ -3,6 +3,8 @@
              cmp cmp
              luasnip luasnip}})
 
+;; Sources for autocompletion
+
 (def- cmp-src-menu-items
   {:buffer "buff"
    :conjure "conj"
@@ -17,7 +19,7 @@
    {:name :vsnip}
    {:name :luasnip}])
 
-;; Setup cmp with desired settings
+
 
 (fn has-words-before []
   (let [(line col) (unpack (vim.api.nvim_win_get_cursor 0))]
