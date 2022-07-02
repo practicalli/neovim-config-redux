@@ -30,20 +30,23 @@
 
 
 
-;clear highlighting on enter in normal mode
-;; (nvim.set_keymap :n :<CR> ":noh<CR><CR>" {:noremap true})
+;clear symbol highlighting on enter in normal mode
+(util.nnoremap :<CR> ":noh<CR><CR>")
 
 ;escape from terminal normal mode
 (nvim.set_keymap :t :<esc><esc> "<c-\\><c-n>" {:noremap true})
 
 ;; Spacemacs style leader mappings.
 ;; Tabs
-(nvim.set_keymap :n :<leader>tn ":tabnext<cr>" {:noremap true})
-(nvim.set_keymap :n :<leader>tp ":tabprevious<cr>" {:noremap true})
-(nvim.set_keymap :n :<leader>to ":tabonly<cr>" {:noremap true})
+(util.lnnoremap :tt ":Telescope tele_tabby list") ;; Visual tab switch
+(util.lnnoremap :td ":tabclose<cr>")
+(util.lnnoremap :tn ":tabnext<cr>")
+(util.lnnoremap :tp ":tabprevious<cr>")
+(util.lnnoremap :to ":tabonly<cr>") ;; Only show active tab
+(util.lnnoremap :tm ":tab sp<cr>") ;; Creates a new split as a tab ??
 
-;; Creates a new split as a tab ??  Not sure about this one
-(nvim.set_keymap :n :<leader>tm ":tab sp<cr>" {:noremap true})
+
+(util.lnnoremap :sv ":vsplit<cr>") ;; Creates a new split as a tab ??
 
 ;;;; Windows
 ;; Maximise window (or is this tab?)
@@ -77,6 +80,7 @@
 
 ;; Git Version control
 (nvim.set_keymap :n :<leader>gd ":DiffviewOpen<cr>" {:noremap true})
+(util.lnnoremap :gs ":Neogit")
 
 ;; Clojure Reader macro
 (nvim.set_keymap :n :<leader>cc "(i#_<ESC>" {:noremap true})
