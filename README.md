@@ -56,7 +56,9 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
  - [aniseed](https://github.com/Olical/aniseed) *Bridges between fennel and nvim*
  - [conjure](https://github.com/Olical/conjure) *Interactive repl based evaluation for nvim*
  - [telescope](https://github.com/nvim-telescope/telescope.nvim) *Find, Filter, Preview, Pick*
-   - [nvim-telescope/telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim) *switch between projects*
+   - [telescope-file-browser](https://github.com/nvim-telescope/telescope-file-browser.nvim) *file management - create, delete, rename and move files and directories*
+   - [telescope-env](https://github.com/LinArcX/telescope-env.nvim) *list/search environment variables*
+   - [telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim) *switch between projects*
  - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) *Incremental parsing system for highlighting, indentation, or folding*
  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) *Quickstart configurations for the Nvim LSP client*
  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) *Autocompletion plugin*
@@ -70,6 +72,7 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
 - [tpope/commentary.vim](https://github.com/tpope/vim-commentary) *toggle line comments*
 - [Todo Comments](https://github.com/folke/todo-comments.nvim) *Highlight and search for todo comments (TODO, NOTE, WARNING, FIX, HACK, PERF - specify in options)*
 - [neogit](https://github.com/TimUntersberger/neogit) *Magit clone - WIP with lots of useful features already*
+- [octo](https://github.com/pwntester/octo.nvim) *GitHub Issues and Pull Requests*
 - [orgmode](https://github.com/nvim-orgmode/orgmode) *excellent note taking and agenda management*
 
 Supporting plugins
@@ -81,6 +84,9 @@ Supporting plugins
 - [] [tpope/fugitive](https://github.com/tpope/vim-fugitive) *Git command line* installed, no key bindings yet (using neogit instead)
 
 <!-- TODO: plugins to add -->
+
+* https://github.com/gbprod/yanky.nvim#%EF%B8%8F-yank-ring - cycle through kill ring (and other stuff)
+
  - [ ] [terrortylor/nvim-comment](https://github.com/terrortylor/nvim-comment)
  - [ ] [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim) motions (replacement for lightspeed), alternative to easy-motions ??
 
@@ -91,6 +97,17 @@ Supporting plugins
  - [ ] [p00f/nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) *treesitter based rainbow parens*
 
  - https://github.com/ruifm/gitlinker.nvim share github links
+
+#### Telescope extensions to try
+
+* https://github.com/LinArcX/telescope-ports.nvim - show ports being used and kill associated processes?
+* https://github.com/aloussase/telescope-maven-search - search Maven Central - maybe useful for finding jdbc driver versions, postgresql
+* https://github.com/chip/telescope-software-licenses.nvim - search for open source licenses
+
+
+## Plugin Not used
+
+* https://github.com/nvim-telescope/telescope-github.nvim - use Octo
 
 
 
@@ -208,10 +225,10 @@ Conjure specifics settings, I like to remap the doc work keymap to be `<locallea
 ## [fnl/config/plugin/telescope.fnl](fnl/config/plugin/telescope.fnl)
 Settings like ignore `node_modules` and everything in `.gitignore` to be listed in the file finder.
 Keymaps:
- - `<leader>ff` open the find files
- - `<leader>fg` open the fuzzy finder
- - `<leader>fb` open the find open buffer
- - `<leader>fh` open the nvim help fuzzy finder
+ - `<leader>pf` open the find files
+ - `<leader>p/` open the fuzzy finder
+ - `<leader>bb` open the find open buffer
+ - `<leader>h/` open the nvim help fuzzy finder
 
 ## [fnl/config/plugin/treesitter.fnl](fnl/config/plugin/treesitter.fnl)
 Settings to select which treesitter's features we want enabled and which language extension we want to ensure they will be always installed.
@@ -335,3 +352,15 @@ Please raise an issue for anything other than trivial changes
 ## License
 
 Creative Commons Attribution Share-Alike 4.0 International
+
+
+## Environment variables
+
+`:Telescope env` list all the environment variables on the operating system, type patters to narrow the list
+
+
+## Getting help
+
+`:h` menu followed by feature name that help is needed for, e.g. `:h conjure`
+
+`<leader>h/` list and preview help via telescope
