@@ -61,6 +61,7 @@
   ;; GitHub themes - dark and light variations configured in plugins/theme.fnl
   :projekt0n/github-nvim-theme {:mod :theme}
 
+  :overcache/NeoSolarized {}
   ;; gruvbox theme - to set up plugin/theme.fnl before this works
   ;; :morhetz/gruvbox {:mod :theme-gruvbox}
   ;; Gruvbox contrast options to try: :soft :medium :hard
