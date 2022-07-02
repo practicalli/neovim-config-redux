@@ -16,12 +16,11 @@ This project owes it existence to the contributions and guidance of [rafaeldelbo
 
 - [git](https://git-scm.com/downloads)
 - [Neovim 0.7.0](https://neovim.io/) or greater
+    - C compiler - e.g. gcc on Linux, clang on Termux(Android) - required for Neovim Treesitter
 - [ripgrep](https://github.com/BurntSushi/ripgrep) to search for files
 - [Clojure CLI](https://clojure.org/)
 - [practicalli/clojure-deps-edn](https://clojure.org/) user level aliases adding a range of community tools
 - [clojure-lsp](https://github.com/clojure-lsp/clojure-lsp) Language Server Protocol implementation for Clojure
-- [node.js]() required for Neovim Treesitter
-- `npm -g install neovim`
 
 ## How to use
 
