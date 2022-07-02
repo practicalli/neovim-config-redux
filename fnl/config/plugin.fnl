@@ -34,8 +34,10 @@
   ;; nvim config and plugins in Fennel
   :Olical/aniseed {:branch :develop}
 
-  ;;;; theme
+  ;;;; Menu system & Neovim control
+  :folke/which-key.nvim {:mod :which-key}
 
+  ;;;; theme
   ;; Development related icons
   :kyazdani42/nvim-web-devicons {}
 
@@ -99,12 +101,25 @@
 
   ;; repl tools
   :Olical/conjure {:branch :master :mod :conjure}
+  :clojure-vim/clojure.vim {}
+  :clojure-vim/vim-jack-in {}
 
-  ;; sexp
+  ;; sexp and vim-style editing
   :guns/vim-sexp {:mod :sexp}
-  :tpope/vim-sexp-mappings-for-regular-people {}
+
+  :tpope/vim-abolish {}
+  :tpope/vim-commentary {}
+
+  ;; Database Client :DB
+  :tpope/vim-dadbod {}
+  :tpope/vim-dispatch {}
+  :tpope/vim-fugitive {:mod :fugitive}
   :tpope/vim-repeat {}
+  :tpope/vim-sexp-mappings-for-regular-people {}
+  :tpope/vim-sleuth {}
   :tpope/vim-surround {}
+  :tpope/vim-unimpaired {}
+
 
   ;; parsing system
   :nvim-treesitter/nvim-treesitter {:run ":TSUpdate"
