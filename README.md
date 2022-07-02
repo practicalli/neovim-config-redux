@@ -70,6 +70,7 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
 - [tpope/commentary.vim](https://github.com/tpope/vim-commentary) *toggle line comments*
 - [Todo Comments](https://github.com/folke/todo-comments.nvim) *Highlight and search for todo comments (TODO, NOTE, WARNING, FIX, HACK, PERF - specify in options)*
 - [neogit](https://github.com/TimUntersberger/neogit) *Magit clone - WIP with lots of useful features already*
+- [orgmode](https://github.com/nvim-orgmode/orgmode) *excellent note taking and agenda management*
 
 Supporting plugins
 - https://github.com/folke/trouble.nvim supports Todo Comments

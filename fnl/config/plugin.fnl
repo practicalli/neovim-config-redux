@@ -93,6 +93,9 @@
               :nvim-lua/plenary.nvim]
    :mod :telescope}
 
+  ;; Documentation
+  :nvim-orgmode/orgmode {:mod :orgmode}
+
   ;;;; Version control
   ;; diff view
   :sindrets/diffview.nvim
