@@ -82,6 +82,8 @@ Supporting plugins
 
 <!-- TODO: plugins to add -->
 
+ - https://github.com/cappyzawa/trim.nvim - trim whitespace
+
 * https://github.com/gbprod/yanky.nvim#%EF%B8%8F-yank-ring - cycle through kill ring (and other stuff)
 
  - [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim) motions (replacement for lightspeed), alternative to easy-motions ??
@@ -93,6 +95,7 @@ Supporting plugins
 
  - https://github.com/ruifm/gitlinker.nvim share github links
 
+
 #### Telescope extensions to try
 
 * https://github.com/aloussase/telescope-maven-search - search Maven Central - maybe useful for finding jdbc driver versions, postgresql
@@ -102,7 +105,7 @@ Supporting plugins
 ## Plugin Not used
 
 * https://github.com/nvim-telescope/telescope-github.nvim - use Octo
-
+* ntpeters/vim-better-whitespace - vim plugin Whitespace hightlighting / removal - overly complicated to configure in fennel
 
 
 # Using Neovim
@@ -363,3 +366,11 @@ Creative Commons Attribution Share-Alike 4.0 International
 ## Visual select tips
 
 `ve` select to end of word
+
+
+## Where is...
+
+Where is the neovim configuration?
+```
+:echo stdpath('config')
+```
