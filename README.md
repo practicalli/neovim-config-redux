@@ -59,6 +59,7 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
    - [telescope-file-browser](https://github.com/nvim-telescope/telescope-file-browser.nvim) *file management - create, delete, rename and move files and directories*
    - [telescope-env](https://github.com/LinArcX/telescope-env.nvim) *list/search environment variables*
    - [telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim) *switch between projects*
+   - [ports](https://github.com/LinArcX/telescope-ports.nvim) *show ports being used and kill associated processes*
  - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) *Incremental parsing system for highlighting, indentation, or folding*
  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) *Quickstart configurations for the Nvim LSP client*
  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) *Autocompletion plugin*
@@ -98,7 +99,6 @@ Supporting plugins
 
 #### Telescope extensions to try
 
-* https://github.com/LinArcX/telescope-ports.nvim - show ports being used and kill associated processes?
 * https://github.com/aloussase/telescope-maven-search - search Maven Central - maybe useful for finding jdbc driver versions, postgresql
 * https://github.com/chip/telescope-software-licenses.nvim - search for open source licenses
 

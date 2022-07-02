@@ -20,6 +20,7 @@
 (telescope.load_extension "env")
 (telescope.load_extension "file_browser")
 (telescope.load_extension "packer")
+(telescope.load_extension "ports")
 (telescope.load_extension "project")
 (telescope.load_extension "tele_tabby")
 (telescope.load_extension "ui-select")

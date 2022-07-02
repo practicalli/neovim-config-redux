@@ -88,10 +88,12 @@
   :nvim-telescope/telescope.nvim
   {:requires [:nvim-lua/popup.nvim
               :nvim-lua/plenary.nvim
+              :rcarriga/nvim-notify  ;; ports extension
 
               ;; Extensions
               :nvim-telescope/telescope-file-browser.nvim
               :LinArcX/telescope-env.nvim
+              :LinArcX/telescope-ports.nvim
               :nvim-telescope/telescope-packer.nvim
               :nvim-telescope/telescope-project.nvim
               :TC72/telescope-tele-tabby.nvim
