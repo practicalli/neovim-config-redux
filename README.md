@@ -74,6 +74,7 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
 - [octo](https://github.com/pwntester/octo.nvim) *GitHub Issues and Pull Requests*
 - [orgmode](https://github.com/nvim-orgmode/orgmode) *excellent note taking and agenda management*
  - [nvim-comment](https://github.com/terrortylor/nvim-comment) *toggle line comments with visual selection and motions* (replaces [tpope/commentary.vim](https://github.com/tpope/vim-commentary))
+ - [orgmode](https://github.com/nvim-orgmode/orgmode) *excellent note taking and agenda management*
 
 Supporting plugins
 - https://github.com/folke/trouble.nvim supports Todo Comments
