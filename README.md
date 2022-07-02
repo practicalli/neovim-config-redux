@@ -8,7 +8,7 @@ A Fennel configuration for Neovim 0.7.0 or greater, with a focus on Clojure REPL
 This project owes it existence to the contributions and guidance of [rafaeldelboni](https://github.com/rafaeldelboni/) and the amazing work on Aniseed and Conjure by Olical
 
 * [rafaeldelboni/nvim-fennel-lsp-conjure-as-clojure-ide](https://github.com/rafaeldelboni/nvim-fennel-lsp-conjure-as-clojure-ide) - clearly documented configuration for those starting with Neovim and Clojure
-*  [rafaeldelboni/dotfiles](https://github.com/rafaeldelboni/dotfiles) - more advanced and updated configurations
+* [rafaeldelboni/dotfiles](https://github.com/rafaeldelboni/dotfiles) - more advanced and updated configurations
 * [Olical/dotfiles](https://github.com/Olical/dotfiles/tree/main/stowed/.config/nvim) - Neovim configuration from the author of Aniseed and Conjure (and many other wonderful things)
 
 
