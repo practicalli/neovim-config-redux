@@ -112,6 +112,10 @@
   :junegunn/vim-easy-align {:mod :easy-align}
 
 
+; multicursor selector
+  :mg979/vim-visual-multi {}
+
+
   ;; repl tools
   :Olical/conjure {:branch :master :mod :conjure}
   :clojure-vim/clojure.vim {}
