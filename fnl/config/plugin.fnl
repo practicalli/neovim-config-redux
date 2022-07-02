@@ -79,7 +79,12 @@
   ;; peek at a line number
   :nacro90/numb.nvim {:mod :numb}
 
-  ;; file searching
+  ;; Projects and file navigation
+  :kyazdani42/nvim-tree.lua
+  {:requires [:kyazdani42/nvim-web-devicons]
+   :tag :nightly
+   :mod :nvim-tree}
+
   :nvim-telescope/telescope.nvim
   {:requires [:nvim-telescope/telescope-ui-select.nvim
               :nvim-telescope/telescope-project.nvim
