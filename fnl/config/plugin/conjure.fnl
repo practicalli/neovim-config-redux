@@ -87,7 +87,7 @@
 
 ;; Open log in a new tab
 ;; Default: `"lt"`
-;; (set nvim.g.conjure#mapping#log_tab "lv")
+;; (set nvim.g.conjure#mapping#log_tab "lt")
 
 ;; Opens the log in the current window.
 ;; Default: `"le"`
