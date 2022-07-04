@@ -49,42 +49,55 @@
 (util.lnnoremap :sv ":vsplit<cr>") ;; Creates a new split as a tab ??
 
 ;;;; Windows
+;; Move cursor between windows
+(util.lnnoremap :wh ":wincmd h<cr>")
+(util.lnnoremap :wj ":wincmd j<cr>")
+(util.lnnoremap :wk ":wincmd k<cr>")
+(util.lnnoremap :wl ":wincmd l<cr>")
 ;; Maximise window (or is this tab?)
-(nvim.set_keymap :n :<leader>wm ":only<cr>" {:noremap true})
+(util.lnnoremap :wm ":only<cr>")
 
 ;; Buffers
-
-(util.lnnoremap :ba ":ball")
-;; (nvim.set_keymap :n :<leader>ba ":ball<cr>" {:noremap true})
-(nvim.set_keymap :n :<leader>bd ":bdelete<cr>" {:noremap true})
-(nvim.set_keymap :n :<leader>bn ":bnext<cr>" {:noremap true})
-(nvim.set_keymap :n :<leader>bp ":bprevious<cr>" {:noremap true})
-;; Toggle between previous and current buffer
-(nvim.set_keymap :n :<leader><tab>":bprevious<cr>" {:noremap true})
+;; Toggle between current and last active buffer
+(util.lnnoremap :<tab>":b#<cr>")
+(util.lnnoremap :ba ":ball<cr>")
+(util.lnnoremap :bd ":bdelete<cr>")
+(util.lnnoremap :bn ":bnext<cr>")
+(util.lnnoremap :bp ":bprevious<cr>")
 
 ;; Projects and files
 ;; Find files in a project
 (util.lnnoremap :ff":Telescope file_browser")
-(nvim.set_keymap :n :<leader>fs ":write<cr>" {:noremap true})
-(nvim.set_keymap :n :<leader>fc ":saveas<cr>" {:noremap true})
-(nvim.set_keymap :n :<leader>ft":NvimTreeToggle<cr>" {:noremap true})
-(nvim.set_keymap :n :<leader>pt":NvimTreeFindFile<cr>" {:noremap true})
+(util.lnnoremap :fs ":write<cr>")
+(util.lnnoremap :fc ":saveas<cr>")
+(util.lnnoremap :ft":NvimTreeToggle<cr>")
+(util.lnnoremap :pt":NvimTreeFindFile<cr>")
+
+;; Package Manager
+(util.lnnoremap :pi":PackerInstall<cr>")
+(util.lnnoremap :ps":PackerSync<cr>")
+(util.lnnoremap :pu":PackerUpdate<cr>")
+
+;; Treesitter parsers update
+(util.lnnoremap :pti":TSInstallInfo<cr>")
+;; Treesitter parsers install status
+(util.lnnoremap :pti":TSInstallInfo<cr>")
 
 ;; Quit
-(nvim.set_keymap :n :<leader>qa ":quitall<cr>" {:noremap true})
-(nvim.set_keymap :n :<leader>qq ":quit<cr>" {:noremap true})
-(nvim.set_keymap :n :<leader>qQ ":quit!<cr>" {:noremap true})
+(util.lnnoremap :qa ":quitall<cr>")
+(util.lnnoremap :qq ":quit<cr>")
+(util.lnnoremap :qQ ":quit!<cr>")
 
 ;; Insert mode: fd as Escape short cut
-(nvim.set_keymap :i :fd "<ESC>" {:noremap true})
+(util.insert-keymap :fd "<ESC>")
 
 ;; Git Version control
-(nvim.set_keymap :n :<leader>gd ":DiffviewOpen<cr>" {:noremap true})
+(util.lnnoremap :gd ":DiffviewOpen<cr>")
 (util.lnnoremap :gs ":Neogit")
 
 ;; Clojure Reader macro
-(nvim.set_keymap :n :<leader>cc "(i#_<ESC>" {:noremap true})
-(nvim.set_keymap :n :<leader>cu "<Cmd>let s=@/<CR>l?\\v(#_)+<CR>dgn:let @/=s<CR>" {:noremap true})
+(util.lnnoremap :cc "(i#_<ESC>")
+(util.lnnoremap :cu "<Cmd>let s=@/<CR>l?\\v(#_)+<CR>dgn:let @/=s<CR>")
 
 ;sets a nvim global options
 

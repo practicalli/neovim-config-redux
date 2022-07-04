@@ -2,6 +2,11 @@
   {autoload {core aniseed.core
              nvim aniseed.nvim}})
 
+(defn insert-keymap [from to]
+  (let [map-opts {:noremap true}
+        to (.. ":" to "<cr>")]
+    (nvim.set_keymap :i from to map-opts)))
+
 (defn nnoremap [from to opts]
   (let [map-opts {:noremap true}
         to (.. ":" to "<cr>")]
