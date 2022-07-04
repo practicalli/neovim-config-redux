@@ -92,7 +92,8 @@
 (util.lnnoremap :cc "(i#_<ESC>")
 (util.lnnoremap :cu "<Cmd>let s=@/<CR>l?\\v(#_)+<CR>dgn:let @/=s<CR>")
 
-;sets a nvim global options
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Neovim - global editor options
 
 (let [options
       {
