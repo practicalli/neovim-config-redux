@@ -204,7 +204,7 @@
 
 ;; Display HUD
 ;; Default: `true`
-;; (set nvim.g.conjure#log#hud#enabled false)
+(set nvim.g.conjure#log#hud#enabled false)
 
 ;; Delay closing HUD passively (milliseconds) e.g. after cursor move
 ;; Default: `0` - closes HUD instantly
