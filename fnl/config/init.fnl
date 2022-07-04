@@ -16,12 +16,6 @@
 
 
 ;; Set Conjure comments to ;;
-;; this is only for conjure eval to comments though
-;; g:conjure#eval#comment_prefix=";; "
-
-;; (nvim.ex.autocmd "FileType" "clojure "setlocal" "commentstring" ";;\ ")
-;; (nvim.ex.autocmd "FocusGained,BufEnter" "*" ":checktime")
-
 (vim.api.nvim_create_autocmd
   :FileType
   {:group    (vim.api.nvim_create_augroup :commentary_config {:clear true})
