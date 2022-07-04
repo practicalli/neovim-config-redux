@@ -37,7 +37,7 @@
   ;;;; Menu system & Neovim control
   :folke/which-key.nvim {:mod :which-key}
 
-  ;;;; theme
+  ;;;; themes and icons
   ;; Development related icons
   :kyazdani42/nvim-web-devicons {}
 
@@ -61,7 +61,18 @@
   ;; GitHub themes - dark and light variations configured in plugins/theme.fnl
   :projekt0n/github-nvim-theme {:mod :theme}
 
-  :overcache/NeoSolarized {}
+ ;; Omni dark theme for Neovim - https://github.com/getomni/neovim
+ :getomni/neovim {}
+
+ ;; Palenightfall dark theme for Neovim - https://github.com/JoosepAlviste/palenightfall.nvim
+ :JoosepAlviste/palenightfall.nvim {}
+
+ ;; One dark & light theme for Neovim - https://github.com/disrupted/one.nvim
+ :disrupted/one.nvim {}
+
+;;dark & light theme with wide plugin support
+ :folke/tokyonight.nvim {}
+
   ;; gruvbox theme - to set up plugin/theme.fnl before this works
   ;; :morhetz/gruvbox {:mod :theme-gruvbox}
   ;; Gruvbox contrast options to try: :soft :medium :hard
@@ -71,9 +82,10 @@
   ;; Light theme - may require plugin/theme.fnl or smilar to work
   ;; :ingram1107/vim-zhi {}
 
-  ;;;; status line
-  :nvim-lualine/lualine.nvim {:mod :lualine}
+ :overcache/NeoSolarized {}
 
+  ;;;; status line
+ :nvim-lualine/lualine.nvim {:mod :lualine}
 
   ;;;; Navigation
 
