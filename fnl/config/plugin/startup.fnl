@@ -4,18 +4,15 @@
 
 ;; https://github.com/startup-nvim/startup.nvim
 
+
 (startup.setup
- {
-
-
-:logo {
-
+ {:logo-neovim {
     :type "text"
     :oldfiles_directory false
     :align "center"
     :title "Header"
     :margin 5
-:content [
+    :content [
             " ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗"
             " ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║"
             " ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║"
@@ -23,18 +20,49 @@
             " ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║"
             " ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝"
 ]
-    :highlight "Statement"
+    :highlight "TSTag"
     :default_color ""
     :oldfiles_amount 0
 }
-:header {
+
+  :logo-lambda {
     :type "text"
     :oldfiles_directory false
     :align "center"
     :title "Header"
     :margin 5
-    :content ["A Startup Theme in Fennel"]
-    :highlight "Statement"
+    :content [
+     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣤⣤⣴⣦⣤⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ "
+     "⠀⠀⠀⠀⠀⠀⢀⣤⣾⣿⣿⣿⣿⠿⠿⠿⠿⣿⣿⣿⣿⣶⣤⡀⠀⠀⠀⠀⠀⠀ "
+     "⠀⠀⠀⠀⣠⣾⣿⣿⡿⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⢿⣿⣿⣶⡀⠀⠀⠀⠀ "
+     "⠀⠀⠀⣴⣿⣿⠟⠁⠀⠀⠀⣶⣶⣶⣶⡆⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣦⠀⠀⠀ "
+     "⠀⠀⣼⣿⣿⠋⠀⠀⠀⠀⠀⠛⠛⢻⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠙⣿⣿⣧⠀⠀ "
+     "⠀⢸⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣿⡇⠀ "
+     "⠀⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⠀ "
+     "⠀⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⡟⢹⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⣹⣿⣿⠀ "
+     "⠀⣿⣿⣷⠀⠀⠀⠀⠀⠀⣰⣿⣿⠏⠀⠀⢻⣿⣿⡄⠀⠀⠀⠀⠀⠀⣿⣿⡿⠀ "
+     "⠀⢸⣿⣿⡆⠀⠀⠀⠀⣴⣿⡿⠃⠀⠀⠀⠈⢿⣿⣷⣤⣤⡆⠀⠀⣰⣿⣿⠇⠀ "
+     "⠀⠀⢻⣿⣿⣄⠀⠀⠾⠿⠿⠁⠀⠀⠀⠀⠀⠘⣿⣿⡿⠿⠛⠀⣰⣿⣿⡟⠀⠀ "
+     "⠀⠀⠀⠻⣿⣿⣧⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⠏⠀⠀⠀ "
+     "⠀⠀⠀⠀⠈⠻⣿⣿⣷⣤⣄⡀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣾⣿⣿⠟⠁⠀⠀⠀⠀ "
+     "⠀⠀⠀⠀⠀⠀⠈⠛⠿⣿⣿⣿⣿⣿⣶⣶⣿⣿⣿⣿⣿⠿⠋⠁⠀⠀⠀⠀⠀⠀ "
+     "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠛⠛⠛⠛⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ "
+    ]
+    :highlight "TSTag"
+    :default_color ""
+    :oldfiles_amount 0
+  }
+
+  :header {
+    :type "text"
+    :oldfiles_directory false
+    :align "center"
+    :title "Header"
+    :margin 5
+    :content [
+      "practical.li/neovim"
+      "Fennel Configuration for A rich Neovim experience"]
+    :highlight "Function"
     :default_color ""
     :oldfiles_amount 0
  }
@@ -53,19 +81,8 @@
             [" Recent Files" "Telescope oldfiles" "<leader>of"]
             [" Colorschemes" "Telescope colorscheme" "<leader>cs"]
             [" New File" "lua require'startup'.new_file()" "<leader>nf"]
-]
+    ]
     :highlight "String"
-    :default_color ""
-    :oldfiles_amount 0
-}
-  :book {
-    :type "text"
-    :oldfiles_directory false
-    :align "center"
-    :title "Body"
-    :margin 5
-    :content ["practical.li/neovim"]
-    :highlight "Function"
     :default_color ""
     :oldfiles_amount 0
 }
@@ -87,6 +104,6 @@
     :folded_section "#56b6c2"
 }
 
-  :parts [:logo :header :menu :book]
+  :parts [:logo-lambda :header :menu]
 
 })
