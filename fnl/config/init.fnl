@@ -38,9 +38,6 @@
 (util.lnnoremap :to "tabonly") ;; Only show active tab
 (util.lnnoremap :tm "tab sp") ;; Creates a new split as a tab ??
 
-
-(util.lnnoremap :sv "vsplit") ;; Creates a new split as a tab ??
-
 ;;;; Windows
 ;; Move cursor between windows
 (util.lnnoremap :wh "wincmd h")
@@ -49,6 +46,8 @@
 (util.lnnoremap :wl "wincmd l")
 ;; Maximise window (or is this tab?)
 (util.lnnoremap :wm "only")
+(util.lnnoremap :ws "split") ;; Horizontal window split
+(util.lnnoremap :wv "vsplit") ;; Vertical window split
 
 ;; Buffers
 ;; Toggle between current and last active buffer
@@ -72,7 +71,7 @@
 (util.lnnoremap :pu "PackerUpdate")
 
 ;; Treesitter parsers update
-(util.lnnoremap :pti "TSInstallInfo")
+(util.lnnoremap :pti "TSUpdate")
 ;; Treesitter parsers install status
 (util.lnnoremap :pti "TSInstallInfo")
 
