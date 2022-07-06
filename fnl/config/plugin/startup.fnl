@@ -100,7 +100,7 @@
     :open_help "?"
 }
   :colors {
-    :background "#1f2227"
+    :background "#f8f2e6"
     :folded_section "#56b6c2"
 }
 
