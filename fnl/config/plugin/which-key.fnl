@@ -1,6 +1,28 @@
 (module config.plugin.which-key
   {autoload {which-key which-key}})
 
+(which-key.register
+ {:<leader>
+  {:b {:name "Buffers"}
+   :c {:name "Color"}
+   :e {:name "Errors"}
+   :f {:name "Files"
+       :e [":Telescope file_browser<cr>" "Explorer"]
+       :t [":NvimTreeToggle<cr>" "Tree toggle"]}
+   :g {:name "Git/Version Control"}
+   :h {:name "Help"}
+   :i {:name "Insertion"}
+   :j {:name "Jump"}
+   :l {:name "Layouts"}
+   :n {:name "Narrow/Numbers"}
+   :o {:name "User Bindings"}
+   :p {:name "Projects"}
+   :q {:name "Quit"}
+   :t {:name "Tabs"}
+   :T {:name "Toggle"}
+   :w {:name "Windows"}}})
+
+
 (which-key.setup
  {:plugins
   {;; show list of your marks on ' and `
