@@ -4,8 +4,11 @@
              util config.util
              str aniseed.string}})
 
-;; generic mapping leaders configuration
+;; refresh changed content
+(nvim.ex.autocmd "FocusGained,BufEnter" "*" ":checktime")
 
+
+;; generic mapping leaders configuration
 (nvim.set_keymap :n :<space> :<nop> {:noremap true})
 (set nvim.g.mapleader " ")
 (set nvim.g.maplocalleader ",")
