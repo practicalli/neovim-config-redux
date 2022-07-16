@@ -65,8 +65,13 @@
 (util.lnnoremap :ft "NvimTreeToggle")
 (util.lnnoremap :pt "NvimTreeFindFile")
 
+;; Colors and themes 
+(util.lnnoremap :cs "Telescope colorscheme")
+
 ;; Package Manager
 (util.lnnoremap :pi "PackerInstall")
+;; list packages
+(util.lnnoremap :pl "Telescope packer")
 (util.lnnoremap :ps "PackerSync")
 (util.lnnoremap :pu "PackerUpdate")
 

@@ -6,8 +6,9 @@
 
 (telescope.setup
   {:defaults {:file_ignore_patterns ["node_modules"]
-              ;; Use Esc key (once) to leave telescope popup - otherwise it first goes to normal mode
-              ;; :mappings {:i {["<esc>"] actions.close}}
+              ;; Esc closes telescope popup immediately 
+              ;; otherwise Esc first goes to normal mode
+              ;; :mappings {:i {:<esc> actions.close}}
               }
    :extensions {:env {}
                 :ui-select {1 (themes.get_dropdown {})}
@@ -25,6 +26,7 @@
 (telescope.load_extension "tele_tabby")
 (telescope.load_extension "ui-select")
 
+;; TODO: move telescope mappings to mappings namespace
 (nvim.set_keymap :n :<leader>pf ":lua require('telescope.builtin').find_files()<CR>" {:noremap true})
 (nvim.set_keymap :n :<leader>p/ ":lua require('telescope.builtin').live_grep()<CR>" {:noremap true})
 (nvim.set_keymap :n :<leader>bb ":lua require('telescope.builtin').buffers()<CR>" {:noremap true})
