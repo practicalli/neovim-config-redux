@@ -39,7 +39,7 @@
 
   ;;;; themes and icons
   ;; Development related icons
-  :kyazdani42/nvim-web-devicons {}
+  :kyazdani42/nvim-web-devicons {:mod :web-devicons}
 
   ;; Startup screen
   :startup-nvim/startup.nvim
