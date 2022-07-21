@@ -4,38 +4,18 @@
              util config.util
              str aniseed.string}})
 
-;; refresh changed content
-(nvim.ex.autocmd "FocusGained,BufEnter" "*" ":checktime")
 
+;; --------------------
+;; Key bindings (mappings)
 
 ;; generic mapping leaders configuration
 (nvim.set_keymap :n :<space> :<nop> {:noremap true})
 (set nvim.g.mapleader " ")
 (set nvim.g.maplocalleader ",")
 
-;;;; Line settings
-;don't wrap lines
-(nvim.ex.set :nowrap)
+;; Insert mode: fd as Escape short cut
+(nvim.set_keymap :i :fd "<ESC>" {:noremap true})
 
-
-;; Set Conjure comments to ;;
-(vim.api.nvim_create_autocmd
-  :FileType
-  {:group    (vim.api.nvim_create_augroup :commentary_config {:clear true})
-   :pattern  [:lisp :clojure :racket :fennel]
-   :callback (fn [] (set vim.opt_local.commentstring ";; %s") nil)})
-
-;; set filetypes for Clojure
-;; autocmd BufNewFile,BufRead .edn,clj,.cljstyle set filetype=clojure
-(nvim.ex.autocmd "BufNewFile,BufRead" ".edn,.clj,.cljstyle" "set filetype=clojure")
-
-;clear symbol highlighting on enter in normal mode
-(util.nnoremap :<CR> "noh<CR><CR>")
-
-;escape from terminal normal mode
-(nvim.set_keymap :t :<esc><esc> "<c-\\><c-n>" {:noremap true})
-
-;; Spacemacs style leader mappings.
 ;; Tabs
 (util.lnnoremap :tt "Telescope tele_tabby list") ;; Visual tab switch
 (util.lnnoremap :td "tabclose")
@@ -57,7 +37,7 @@
 
 ;; Buffers
 ;; Toggle between current and last active buffer
-(util.lnnoremap :<tab>"b#")
+(util.lnnoremap :<tab> "b#")
 (util.lnnoremap :ba "ball")
 (util.lnnoremap :bd "bdelete")
 (util.lnnoremap :bn "bnext")
@@ -71,7 +51,7 @@
 (util.lnnoremap :ft "NvimTreeToggle")
 (util.lnnoremap :pt "TodoTelescope")
 
-;; Colors and themes 
+;; Colors and themes
 (util.lnnoremap :cs "Telescope colorscheme")
 
 ;; Package Manager
@@ -91,9 +71,6 @@
 (util.lnnoremap :qq "quit")
 (util.lnnoremap :qQ "quit!")
 
-;; Insert mode: fd as Escape short cut
-(nvim.set_keymap :i :fd "<ESC>" {:noremap true})
-
 ;; Git Version control
 (util.lnnoremap :gd "DiffviewOpen")
 (util.lnnoremap :gs "Neogit")
@@ -102,7 +79,28 @@
 (util.lnnoremap :cc "(i#_<ESC>")
 (util.lnnoremap :cu "<Cmd>let s=@/<CR>l?\\v(#_)+<CR>dgn:let @/=s<CR>")
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; escape from terminal normal mode
+(nvim.set_keymap :t :<esc><esc> "<c-\\><c-n>" {:noremap true})
+
+
+;; --------------------
+;; Filetype configuration
+
+;; Set Conjure and other filetype line comments to ;;
+(vim.api.nvim_create_autocmd
+  :FileType
+  {:group    (vim.api.nvim_create_augroup :commentary_config {:clear true})
+   :pattern  [:lisp :clojure :racket :fennel]
+   :callback (fn [] (set vim.opt_local.commentstring ";; %s") nil)})
+
+;; set filetypes filename extensions for Clojure
+;; autocmd BufNewFile,BufRead .edn,clj,.cljstyle set filetype=clojure
+(nvim.ex.autocmd "BufNewFile,BufRead" ".edn,.clj,.cljstyle" "set filetype=clojure")
+
+;; clear symbol highlighting on enter in normal mode
+(util.nnoremap :<CR> "noh<CR><CR>")
+
+
 ;; --------------------
 ;; Neovim global variables
 
@@ -111,7 +109,14 @@
 (util.set-global-variable vim_markdown_conceal 2)
 
 
+;; --------------------
 ;; Neovim - global editor options
+
+;; refresh changed content
+(nvim.ex.autocmd "FocusGained,BufEnter" "*" ":checktime")
+
+;; Line settings - don't wrap lines
+(nvim.ex.set :nowrap)
 
 (let [options
       {
