@@ -61,7 +61,7 @@
     :margin 5
     :content [
       "practical.li/neovim"
-      "Fennel Configuration for A rich Neovim experience"]
+      "Fennel for that Spiced Neovim experience"]
     :highlight "Function"
     :default_color ""
     :oldfiles_amount 0
