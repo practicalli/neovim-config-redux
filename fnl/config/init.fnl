@@ -75,16 +75,16 @@
 (util.lnnoremap :cs "Telescope colorscheme")
 
 ;; Package Manager
-(util.lnnoremap :pi "PackerInstall")
 ;; list packages
-(util.lnnoremap :pl "Telescope packer")
-(util.lnnoremap :ps "PackerSync")
-(util.lnnoremap :pu "PackerUpdate")
+(util.lnnoremap :Pl "Telescope packer")
+(util.lnnoremap :Pi "PackerInstall")
+(util.lnnoremap :Ps "PackerSync")
+(util.lnnoremap :Pu "PackerUpdate")
 
 ;; Treesitter parsers update
-(util.lnnoremap :pti "TSUpdate")
+(util.lnnoremap :Ptu "TSUpdate")
 ;; Treesitter parsers install status
-(util.lnnoremap :pti "TSInstallInfo")
+(util.lnnoremap :Pti "TSInstallInfo")
 
 ;; Quit
 (util.lnnoremap :qa "quitall")
