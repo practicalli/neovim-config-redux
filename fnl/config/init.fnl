@@ -69,7 +69,7 @@
 (util.lnnoremap :fs "write")
 (util.lnnoremap :fc "saveas")
 (util.lnnoremap :ft "NvimTreeToggle")
-(util.lnnoremap :pt "NvimTreeFindFile")
+(util.lnnoremap :pt "TodoTelescope")
 
 ;; Colors and themes 
 (util.lnnoremap :cs "Telescope colorscheme")
