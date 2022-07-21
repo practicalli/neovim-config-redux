@@ -58,6 +58,9 @@
   {:requires [:nvim-lua/plenary.nvim]
    :mod :todocomments}
 
+  ;; Newspaper - subtle light and dark themes
+  :yorik1984/newpaper.nvim {:mod :theme-newspaper}
+
   ;; GitHub themes - dark and light variations configured in plugins/theme.fnl
   :projekt0n/github-nvim-theme {:mod :theme}
 
