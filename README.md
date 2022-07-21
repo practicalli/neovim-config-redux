@@ -15,6 +15,8 @@ This project owes it existence to the contributions and guidance of [rafaeldelbo
 * [rafaeldelboni/dotfiles](https://github.com/rafaeldelboni/dotfiles) - more advanced and updated configurations
 * [Olical/dotfiles](https://github.com/Olical/dotfiles/tree/main/stowed/.config/nvim) - Neovim configuration from the author of Aniseed and Conjure (and many other wonderful things)
 
+Support has also been provided in the #vim channel of the Clojurians Slack community.
+
 
 ## Prerequisites
 
@@ -26,9 +28,10 @@ This project owes it existence to the contributions and guidance of [rafaeldelbo
 - [practicalli/clojure-deps-edn](https://clojure.org/) user level aliases adding a range of community tools
 - [clojure-lsp](https://github.com/clojure-lsp/clojure-lsp) Language Server Protocol implementation for Clojure
 
+
 ## How to use
 
-**Move `$HOME/.config/nvim` if you have an existing Neovim configuration**
+Move `$HOME/.config/nvim` if you have an existing Neovim configuration
 
 ```bash
 mv  $HOME/.config/nvim  $HOME/backup/nvim
@@ -39,13 +42,11 @@ Clone the repository to the `$HOME/.config/nvim` directory
 git clone git@github.com:practicalli/neovim-config-redux.git $HOME/.config/nvim
 ```
 
-Run `nvim` without opening any files.
+Run `nvim` without opening any files and press `RTN` at the warning message.
 
-It is normal to see errors on the first run.  Although Aniseed and Packer are automatically added, Packer must be called within Neovim to install all the other the packages.
+When starting `nvim` for the first time, the download packer and aniseed plugins are downloaded and some errors occur as there are more packages to download using the Packer tool.
 
-When you start nvim for the first time it will download packer and aniseed and show some errors, thats normal press enter to ignore and go to the
-
-In nvim, press `:` and type `PackerInstall`  (or type `Pack` and press `TAB` to cycle through the menu of completions).
+In Neovim, press `:` and type `PackerInstall`  (or type `Pack` and press `TAB` to cycle through the menu of completions).
 
 `RET` will run :PackerInstall, opening a new window (split) showing the progress of the install.
 
@@ -139,7 +140,7 @@ Project key bindings - https://github.com/nvim-telescope/telescope-project.nvim#
 
 `gc` comment region or use with motion e.g. `gcap` comment paragraph,
 
-gc in operator pending mode to target a comment TODO: what is operator pending mode
+gc in operator pending mode to target a comment `TODO:` what is operator pending mode
 
 `:7,17Commentary` comment a range
 
