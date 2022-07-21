@@ -25,6 +25,9 @@
    :pattern  [:lisp :clojure :racket]
    :callback (fn [] (set vim.opt_local.commentstring ";; %s") nil)})
 
+;; set filetypes for Clojure
+;; autocmd BufNewFile,BufRead .edn,clj,.cljstyle set filetype=clojure
+(nvim.ex.autocmd "BufNewFile,BufRead" ".edn,.clj,.cljstyle" "set filetype=clojure")
 
 ;clear symbol highlighting on enter in normal mode
 (util.nnoremap :<CR> "noh<CR><CR>")
