@@ -156,6 +156,14 @@
   ;; multicursor selector
   :mg979/vim-visual-multi {}
 
+
+  ;; ----------------------
+  ;; Markdown 
+  :ixru/nvim-markdown {}
+
+  ;; ---------------------
+  ;; LISP related features
+
   ;; repl tools
   :clojure-vim/clojure.vim {}
   :clojure-vim/vim-jack-in {}
