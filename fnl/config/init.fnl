@@ -22,7 +22,7 @@
 (vim.api.nvim_create_autocmd
   :FileType
   {:group    (vim.api.nvim_create_augroup :commentary_config {:clear true})
-   :pattern  [:lisp :clojure :racket]
+   :pattern  [:lisp :clojure :racket :fennel]
    :callback (fn [] (set vim.opt_local.commentstring ";; %s") nil)})
 
 ;; set filetypes for Clojure
