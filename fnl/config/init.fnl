@@ -103,6 +103,14 @@
 (util.lnnoremap :cu "<Cmd>let s=@/<CR>l?\\v(#_)+<CR>dgn:let @/=s<CR>")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; --------------------
+;; Neovim global variables
+
+;; Markdown mode conceal links
+;; DRAGONS: conceal not working by default and this config doesnt work either :sadface
+(util.set-global-variable vim_markdown_conceal 2)
+
+
 ;; Neovim - global editor options
 
 (let [options
