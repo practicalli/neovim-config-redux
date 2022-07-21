@@ -88,7 +88,9 @@
  :overcache/NeoSolarized {}
 
   ;;;; status line
- :nvim-lualine/lualine.nvim {:mod :lualine}
+ :nvim-lualine/lualine.nvim
+ {:requires [:kyazdani42/nvim-web-devicons]
+  :mod :theme-lualine}
 
   ;;;; Navigation
 
