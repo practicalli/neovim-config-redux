@@ -60,7 +60,7 @@
 
 
   ;; Newspaper - subtle light and dark themes
-  :yorik1984/newpaper.nvim {:mod :theme-newspaper}
+  :yorik1984/newpaper.nvim {:mod :theme-newpaper}
 
   ;; Gruvbox theme with treesitter support
   :luisiacc/gruvbox-baby {}
