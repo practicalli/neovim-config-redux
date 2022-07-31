@@ -39,17 +39,25 @@
 ;; Toggle between current and last active buffer
 (util.lnnoremap :<tab> "b#")
 (util.lnnoremap :ba "ball")
+(util.lnnoremap :bb "Telescope buffers")
 (util.lnnoremap :bd "bdelete")
 (util.lnnoremap :bn "bnext")
 (util.lnnoremap :bp "bprevious")
 
 ;; Projects and files
 ;; Find files in a project
-(util.lnnoremap :ff "Telescope file_browser")
+(util.lnnoremap :f/ "Telescope live_grep")
+(util.lnnoremap :fb "Telescope file_browser")
+(util.lnnoremap :ff "Telescope find_files")   ;; Added for Convienience
+(util.lnnoremap :fp "Telescope find_files")
 (util.lnnoremap :fs "write")
-(util.lnnoremap :fc "saveas")
-(util.lnnoremap :ft "NvimTreeToggle")
+;; (util.lnnoremap :fc "saveas")  ;; requires an argument before carrage return
+(util.lnnoremap :fe "NvimTreeToggle")
 (util.lnnoremap :pt "TodoTelescope")
+(util.lnnoremap :pt "TodoTelescope")
+
+;; Help and documentation
+(util.lnnoremap :hh "Telescope help_tags")
 
 ;; Colors and themes
 (util.lnnoremap :cs "Telescope colorscheme")

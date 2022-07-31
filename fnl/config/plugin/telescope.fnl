@@ -26,11 +26,6 @@
 (telescope.load_extension "tele_tabby")
 (telescope.load_extension "ui-select")
 
-;; TODO: move telescope mappings to mappings namespace
-(nvim.set_keymap :n :<leader>pf ":lua require('telescope.builtin').find_files()<CR>" {:noremap true})
-(nvim.set_keymap :n :<leader>p/ ":lua require('telescope.builtin').live_grep()<CR>" {:noremap true})
-(nvim.set_keymap :n :<leader>bb ":lua require('telescope.builtin').buffers()<CR>" {:noremap true})
-(nvim.set_keymap :n :<leader>h/ ":lua require('telescope.builtin').help_tags()<CR>" {:noremap true})
 
 ;; ;; TODO: define a picker that shows hidden files "--hidden" or files excluded by git (removing "!.git")
 ;; (telescope.setup {:defaults {:file_ignore_patterns ["node_modules"]}
