@@ -6,7 +6,7 @@
 
 ;; Icon for LSP session
 (defn lsp_connection []
-  (if (vim.tbl_isempty (vim.lsp.buf_get_clients 0)) "x" ""))
+  (if (vim.tbl_isempty (vim.lsp.buf_get_clients 0)) "" ""))
 
 
 (lualine.setup
