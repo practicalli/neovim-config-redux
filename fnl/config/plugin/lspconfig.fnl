@@ -3,17 +3,19 @@
              lsp lspconfig
              cmplsp cmp_nvim_lsp}})
 
+
 ;; gutter icons for lsp diagnostics
+;; :help vim.lsp.diagnostic.set_signs
 (defn define-signs
   [prefix]
   (let [error (.. prefix "SignError")
         warn  (.. prefix "SignWarn")
         info  (.. prefix "SignInfo")
         hint  (.. prefix "SignHint")]
-  (vim.fn.sign_define error {:text "" :texthl error})
-  (vim.fn.sign_define warn  {:text "" :texthl warn})
-  (vim.fn.sign_define info  {:text "" :texthl info})
-  (vim.fn.sign_define hint  {:text "" :texthl hint})))
+    (vim.fn.sign_define error {:text "" :texthl error})
+    (vim.fn.sign_define warn  {:text "" :texthl warn})
+    (vim.fn.sign_define info  {:text "" :texthl info})
+    (vim.fn.sign_define hint  {:text "" :texthl hint})))
 
 ;; LSP naming changed between neovim 0.6 and 0.7 onward
 (if (= (nvim.fn.has "nvim-0.6") 1)
@@ -24,19 +26,19 @@
 ;; Configure server features
 (let [handlers {"textDocument/publishDiagnostics"
                 (vim.lsp.with
-                  vim.lsp.diagnostic.on_publish_diagnostics
-                  {:severity_sort true
-                   :update_in_insert false
-                   :underline true
-                   :virtual_text false})
+                 vim.lsp.diagnostic.on_publish_diagnostics
+                 {:severity_sort true
+                  :update_in_insert false
+                  :underline true
+                  :virtual_text false})
                 "textDocument/hover"
                 (vim.lsp.with
-                  vim.lsp.handlers.hover
-                  {:border "single"})
+                 vim.lsp.handlers.hover
+                 {:border "single"})
                 "textDocument/signatureHelp"
                 (vim.lsp.with
-                  vim.lsp.handlers.signature_help
-                  {:border "single"})}
+                 vim.lsp.handlers.signature_help
+                 {:border "single"})}
       capabilities (cmplsp.update_capabilities (vim.lsp.protocol.make_client_capabilities))
       on_attach (fn [client bufnr]
                   (do
