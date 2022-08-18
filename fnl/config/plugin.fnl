@@ -99,6 +99,9 @@
 
   ;;;; Navigation
 
+  ;; project management (lua plugin)
+  :ahmedkhalf/project.nvim {:mod :project}
+
   ;; peek at a line number
   :nacro90/numb.nvim {:mod :numb}
 
