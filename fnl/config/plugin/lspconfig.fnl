@@ -15,6 +15,12 @@
   (vim.fn.sign_define info  {:text "" :texthl info})
   (vim.fn.sign_define hint  {:text "" :texthl hint})))
 
+;; LSP naming changed between neovim 0.6 and 0.7 onward
+(if (= (nvim.fn.has "nvim-0.6") 1)
+  (define-signs "Diagnostic")
+  (define-signs "LspDiagnostics"))
+
+
 ;; Configure server features
 (let [handlers {"textDocument/publishDiagnostics"
                 (vim.lsp.with
