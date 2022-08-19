@@ -15,7 +15,7 @@
 
 ;; Highlighting changes
 
-  ;; Add signs in Neovim gutter (over-rides other signs and numbers)
+  ;; Add signs in Neovim gutter (over-rides other signs and numbers if signcolumn set to number)
   ;; Toggle with `:Gitsigns toggle_signs` (default:true)
   :signcolumn false
 
