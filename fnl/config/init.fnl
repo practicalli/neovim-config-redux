@@ -170,8 +170,11 @@
        :splitright true
        ;enable highlighting search
        :hlsearch true
-       ;makes signcolumn always one column with signs and linenumber
-       :signcolumn "number"}]
+       ;; single column for signs(icons) and line numbers
+       :signcolumn "number"
+       ;; Width of gutter (number + sign columns)
+       ;; :numberwidth 3  ;; relative numbers should only need 2 columns
+       }]
   (each [option value (pairs options)]
     (util.set-global-option option value)))
 
