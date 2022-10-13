@@ -181,6 +181,7 @@
   ;; :tpope/vim-commentary {}
   :terrortylor/nvim-comment {:mod :nvim-comment}
 
+  ;; ----------------------
   ;; Database Client :DB
   :tpope/vim-dadbod {}
   :tpope/vim-dispatch {}
@@ -197,6 +198,7 @@
   :ekalinin/Dockerfile.vim {}
 
 
+  ;; ----------------------
   ;; parsing system
   :nvim-treesitter/nvim-treesitter
   {:run ":TSUpdate"
