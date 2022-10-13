@@ -191,6 +191,11 @@
   :tpope/vim-unimpaired {}
 
 
+  ;; ----------------------
+  ;; Dockerfile
+  :ekalinin/Dockerfile.vim {}
+
+
   ;; parsing system
   :nvim-treesitter/nvim-treesitter
   {:run ":TSUpdate"
