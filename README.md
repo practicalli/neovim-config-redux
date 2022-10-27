@@ -1,6 +1,6 @@
 # [Practicalli Neovim](https://practical.li/neovim/) Configuration
 
-A Fennel configuration for Neovim 0.7.0 or greater, with a focus on Clojure REPL driven development with Conjure as well as general development workflow. A complete configuration to transform your Neovim in a simple, powerful and fun to use Clojure IDE
+A Fennel configuration for Neovim 0.8.0 or greater, with a focus on Clojure REPL driven development with Conjure as well as general development workflow. A complete configuration to transform your Neovim in a simple, powerful and fun to use Clojure IDE
 
 The key bindings (mappings) are evolving and trying to follow a Spacemacs style mnemonic approach (`SPC f f` to open a file browser). A which-key text menu is also provided to help discover key bindings.  Using mnemonic keybinding will make Neovim more accessible to Spacemacs users (like myself) and those less familiar with the ways of interacting with a Vim editor, i.e. the `:` commands approach.
 
@@ -21,7 +21,7 @@ Support has also been provided in the #vim channel of the Clojurians Slack commu
 ## Prerequisites
 
 - [git](https://git-scm.com/downloads)
-- [Neovim 0.7.0](https://neovim.io/) or greater
+- [Neovim 0.8.0](https://neovim.io/) or greater
     - C compiler - e.g. gcc on Linux, clang on Termux(Android) - required for Neovim Treesitter
 - [ripgrep](https://github.com/BurntSushi/ripgrep) to search for files
 - [Clojure CLI](https://clojure.org/)
