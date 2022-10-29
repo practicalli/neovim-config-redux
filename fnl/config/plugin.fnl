@@ -171,7 +171,7 @@
   ;; repl tools
   :clojure-vim/clojure.vim {}
   :clojure-vim/vim-jack-in {}
- :Olical/conjure {:mod :conjure}
+  :Olical/conjure {:mod :conjure}
 
   ;; sexp and vim-style editing
   ;; :guns/vim-sexp {:mod :sexp}
