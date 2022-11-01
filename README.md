@@ -84,13 +84,18 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
  - [tpope/fugitive](https://github.com/tpope/vim-fugitive) *Git command line* installed, no key bindings yet (using neogit instead - although may need both)
  - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) *Git highlights in gutter - adding fugitive controls*
  - [Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim) *Dockerfile syntax highlighting and snipMate snippets*
+ - [terryma/vim-expand-region](https://github.com/terryma/vim-expand-region) *Visually select regions based on semantic units, `+` to expand, `-` to contract *
 
 Supporting plugins
 - https://github.com/folke/trouble.nvim supports Todo Comments
 - https://github.com/folke/lsp-colors.nvim
 
 <!-- TODO: plugins to add -->
-
+* [nvim-neorg/neorg](https://github.com/nvim-neorg/neorg) - a variation on org mode for neovim - neovim 0.8.* required
+* [mfussenegger/nvim-dap](https://github.com/mfussenegger/nvim-dap) *Debug Adapter Protocol client* - neovim 8.0 required
+  * [ktock/buildg](https://github.com/ktock/buildg) *DAP for Dockerfile*
+* https://github.com/VonHeikemen/lsp-zero.nvim - simplify use of nvim-cmp and LSP config, install language servers using https://github.com/williamboman/mason.nvim
+* https://github.com/williamboman/mason.nvim - package manger for external editor tools, e.g. LSP & DAP servers, linters, formatters,
  - https://github.com/cappyzawa/trim.nvim - trim whitespace
 
 * https://github.com/gbprod/yanky.nvim#%EF%B8%8F-yank-ring - cycle through kill ring (and other stuff)
@@ -109,6 +114,7 @@ Supporting plugins
 
 * https://github.com/aloussase/telescope-maven-search - search Maven Central - maybe useful for finding jdbc driver versions, postgresql
 * https://github.com/chip/telescope-software-licenses.nvim - search for open source licenses
+* https://github.com/LukasPietzschmann/telescope-tabs - switch between and close tabs, optional preview
 
 
 ## Plugin Not used
@@ -380,6 +386,32 @@ Creative Commons Attribution Share-Alike 4.0 International
 ## Where is...
 
 Where is the neovim configuration?
-```
+
+```vim
 :echo stdpath('config')
 ```
+
+
+
+## Configuration to try
+
+syntax highlight code block in markdown - built-in neovim
+- does this actually need setting in neovim - some basic highlighting already happens without it.
+```vim
+-- Give me some fenced codeblock goodness
+g.markdown_fenced_languages = { "html", "javascript", "typescript", "css", "scss", "lua", "vim" }
+```
+
+Lets try this with some Clojure code
+
+```clojure
+(def fish "I am a string")
+
+(defn blah
+ "doc string"
+ [args]
+ (map inc args)
+```
+
+
+😈 `cmd` + `ctrl` + `spc` in Kitty terminal brings up an emoji selector - is this emoji menu MacOS specific ?  How to get this on Linux?
