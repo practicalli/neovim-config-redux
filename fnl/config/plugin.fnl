@@ -153,13 +153,7 @@
               :sindrets/diffview.nvim]
    :mod :neogit}
 
-  ;; text alignment
-  :junegunn/vim-easy-align {:mod :easy-align}
-
-
-  ;; multicursor selector
-  :mg979/vim-visual-multi {}
-
+  :tpope/vim-fugitive {:mod :fugitive}
 
   ;; ----------------------
   ;; Markdown 
@@ -181,16 +175,32 @@
   ;; :tpope/vim-commentary {}
   :terrortylor/nvim-comment {:mod :nvim-comment}
 
+
   ;; ----------------------
   ;; Database Client :DB
   :tpope/vim-dadbod {}
   :tpope/vim-dispatch {}
-  :tpope/vim-fugitive {:mod :fugitive}
+
+  
+  ;; ----------------------
+  ;; Text manipulation
+
   :tpope/vim-repeat {}
   :tpope/vim-sexp-mappings-for-regular-people {}
   :tpope/vim-sleuth {}
   :tpope/vim-surround {}
   :tpope/vim-unimpaired {}
+
+  ;; semantic visual selection
+  :terryma/vim-expand-region {}
+
+  ;; text alignment
+  :junegunn/vim-easy-align {:mod :easy-align}
+
+
+  ;; multicursor selector
+  :mg979/vim-visual-multi {}
+
 
 
   ;; ----------------------
@@ -206,6 +216,9 @@
 
   ;; lsp
   :neovim/nvim-lspconfig {:mod :lspconfig}
+
+  ;; DAP 
+  :mfussenegger/nvim-dap {}
 
   ; snippets
   :L3MON4D3/LuaSnip {:requires [:saadparwaiz1/cmp_luasnip]}
