@@ -174,6 +174,9 @@
        :signcolumn "number"
        ;; Width of gutter (number + sign columns)
        ;; :numberwidth 3  ;; relative numbers should only need 2 columns
+
+       ;; syntax highlight code blocks in markdown
+       ;; :markdown_fenced_languages ["clojure" "html" "json" "css" "scss" "lua" "vim" "yaml"]      
        }]
   (each [option value (pairs options)]
     (util.set-global-option option value)))
