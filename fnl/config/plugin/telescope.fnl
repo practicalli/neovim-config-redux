@@ -24,6 +24,9 @@
 (telescope.load_extension "heading")
 
 (telescope.load_extension "file_browser")
+
+(telescope.load_extension "neoclip")
+
 (telescope.load_extension "packer")
 (telescope.load_extension "ports")
 (telescope.load_extension "project")

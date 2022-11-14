@@ -189,6 +189,11 @@
   ;; ----------------------
   ;; Text manipulation
 
+  ;; Selectable Clipboard history (telescope)
+  :AckslD/nvim-neoclip.lua
+  {:requires [:nvim-telescope/telescope.nvim]
+   :mod :neoclip}
+
   :tpope/vim-repeat {}
   :tpope/vim-sexp-mappings-for-regular-people {}
   :tpope/vim-sleuth {}

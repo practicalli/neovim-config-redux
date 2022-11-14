@@ -16,6 +16,11 @@
 ;; Insert mode: fd as Escape short cut
 (nvim.set_keymap :i :fd "<ESC>" {:noremap true})
 
+;; killring / registers
+;; clipboard history
+(util.lnnoremap :ch "Telescope neoclip")
+
+
 ;; Tabs
 (util.lnnoremap :tt "Telescope tele_tabby list") ;; Visual tab switch
 (util.lnnoremap :td "tabclose")

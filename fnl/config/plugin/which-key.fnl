@@ -4,7 +4,7 @@
 (which-key.register
  {:<leader>
   {:b {:name "Buffers"}
-   :c {:name "Color"}
+   :c {:name "Color-clipboard"}
    :e {:name "Errors"}
    :f {:name "Files"
        :e [":Telescope file_browser<cr>" "Explorer"]
