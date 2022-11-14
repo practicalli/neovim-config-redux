@@ -127,6 +127,7 @@
               :nvim-telescope/telescope-packer.nvim
               :nvim-telescope/telescope-project.nvim
               :TC72/telescope-tele-tabby.nvim
+              :ANGkeith/telescope-terraform-doc.nvim
               :nvim-telescope/telescope-ui-select.nvim]
    :mod :telescope}
 

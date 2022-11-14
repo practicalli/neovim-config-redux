@@ -66,6 +66,7 @@
 (util.lnnoremap :hh "Telescope help_tags")
 (util.lnnoremap :jh "Telescope heading")
 
+(util.lnnoremap :dtb "Telescope terraform_doc")
 
 ;; Colors and themes
 (util.lnnoremap :cs "Telescope colorscheme")

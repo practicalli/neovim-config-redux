@@ -33,6 +33,9 @@
 (telescope.load_extension "tele_tabby")
 (telescope.load_extension "ui-select")
 
+;; Terraform
+(telescope.load_extension "terraform_doc")
+
 
 ;; ;; TODO: define a picker that shows hidden files "--hidden" or files excluded by git (removing "!.git")
 ;; (telescope.setup {:defaults {:file_ignore_patterns ["node_modules"]}
