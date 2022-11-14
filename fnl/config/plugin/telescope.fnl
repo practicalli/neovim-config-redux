@@ -14,7 +14,7 @@
                 :ui-select {1 (themes.get_dropdown {})}
                 :tele_tabby {:use_highlighter false}
                 :packer {}
-                :project {}}
+                :project {:sync_with_nvim_tree true}}
    :pickers {:find_files {:find_command ["rg" "--files" "--iglob" "!.git"]}}})
 
 ;; Load Extensions
