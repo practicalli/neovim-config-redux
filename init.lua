@@ -2,6 +2,10 @@
 -- Bootstrap packer package manager
 -- Aniseed compiles and loads fnl/config/init.fnl and required namespaces
 
+-- nvim_tree: disable netrw at the very start of init.lua (strongly advised)
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 local execute = vim.api.nvim_command
 local fn = vim.fn
 
