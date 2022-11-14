@@ -65,8 +65,10 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
  - [telescope](https://github.com/nvim-telescope/telescope.nvim) *Find, Filter, Preview, Pick*
    - [telescope-file-browser](https://github.com/nvim-telescope/telescope-file-browser.nvim) *file management - create, delete, rename and move files and directories*
    - [telescope-env](https://github.com/LinArcX/telescope-env.nvim) *list/search environment variables*
-   - [telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim) *switch between projects*
+   - [telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim) *list, switch between, create and delete projects*
    - [ports](https://github.com/LinArcX/telescope-ports.nvim) *show ports being used and kill associated processes*
+   - [telescope-headings](https://github.com/crispgm/telescope-heading.nvim) - jump to headings in markdown, asciidoc, etc.
+   - [telescope-terraform-doc](https://github.com/ANGkeith/telescope-terraform-doc.nvim) - search for terraform docs, open in browser
  - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) *Incremental parsing system for highlighting, indentation, or folding*
  - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) *Quickstart configurations for the Nvim LSP client*
  - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) *Autocompletion plugin*
@@ -85,6 +87,8 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
  - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) *Git highlights in gutter - adding fugitive controls*
  - [Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim) *Dockerfile syntax highlighting and snipMate snippets*
  - [terryma/vim-expand-region](https://github.com/terryma/vim-expand-region) *Visually select regions based on semantic units, `+` to expand, `-` to contract *
+ - [neoclip](https://github.com/AckslD/nvim-neoclip.lua) *clipboard history - with telescope popup*
+ 
 
 Supporting plugins
 - https://github.com/folke/trouble.nvim supports Todo Comments
@@ -112,6 +116,15 @@ Supporting plugins
 
 #### Telescope extensions to try
 
+* https://github.com/nvim-neorg/neorg-telescope
+* https://github.com/nvim-telescope/telescope-hop.nvim
+* https://github.com/smartpde/telescope-recent-files
+* https://github.com/FeiyouG/command_center.nvim
+* https://github.com/LinArcX/telescope-changes.nvim
+* https://github.com/LinArcX/telescope-command-palette.nvim
+* https://github.com/ghassan0/telescope-glyph.nvim
+* https://github.com/xiyaowong/telescope-emoji.nvim
+* 
 * https://github.com/aloussase/telescope-maven-search - search Maven Central - maybe useful for finding jdbc driver versions, postgresql
 * https://github.com/chip/telescope-software-licenses.nvim - search for open source licenses
 * https://github.com/LukasPietzschmann/telescope-tabs - switch between and close tabs, optional preview

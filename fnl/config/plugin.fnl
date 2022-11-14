@@ -101,7 +101,7 @@
 
   ;; project management (lua plugin)
   ;; projects cant be created on the fly or renamed it seems
-  ;; use project telescope extention, 
+  ;; use project telescope extention,
   ;; rather than the projects telexcope extention project.nvim provides
   ;; :ahmedkhalf/project.nvim {:mod :project}
 
@@ -161,7 +161,7 @@
   :tpope/vim-fugitive {:mod :fugitive}
 
   ;; ----------------------
-  ;; Markdown 
+  ;; Markdown
   :ixru/nvim-markdown {}
 
   ;; ---------------------
@@ -186,7 +186,7 @@
   :tpope/vim-dadbod {}
   :tpope/vim-dispatch {}
 
-  
+
   ;; ----------------------
   ;; Text manipulation
 
@@ -227,7 +227,7 @@
   ;; lsp
   :neovim/nvim-lspconfig {:mod :lspconfig}
 
-  ;; DAP 
+  ;; DAP
   :mfussenegger/nvim-dap {}
 
   ; snippets

@@ -92,6 +92,31 @@
 (util.lnnoremap :gd "DiffviewOpen")
 (util.lnnoremap :gs "Neogit")
 
+;; GitHub - requires `gh auth login`
+
+(util.lnnoremap :gga "Octo actions")
+(util.lnnoremap :gggl "Octo gist list")
+
+(util.lnnoremap :ggib "Octo issue browser")
+(util.lnnoremap :ggic "Octo issue create")
+(util.lnnoremap :ggil "Octo issue list")
+(util.lnnoremap :ggis "Octo issue search")
+(util.lnnoremap :ggiu "Octo issue url")
+
+(util.lnnoremap :ggpb "Octo pr browser")
+(util.lnnoremap :ggpc "Octo pr create")
+(util.lnnoremap :ggpl "Octo pr list")
+(util.lnnoremap :ggps "Octo pr search")
+(util.lnnoremap :ggpu "Octo pr url")
+
+(util.lnnoremap :ggrb "Octo repo browse")
+(util.lnnoremap :ggrf "Octo repo fork")
+(util.lnnoremap :ggrl "Octo repo list")
+(util.lnnoremap :ggru "Octo repo url")
+
+
+
+
 ;; Clojure Reader macro
 (util.lnnoremap :cc "(i#_<ESC>")
 (util.lnnoremap :cu "<Cmd>let s=@/<CR>l?\\v(#_)+<CR>dgn:let @/=s<CR>")
@@ -185,7 +210,7 @@
        ;; :numberwidth 3  ;; relative numbers should only need 2 columns
 
        ;; syntax highlight code blocks in markdown
-       ;; :markdown_fenced_languages ["clojure" "html" "json" "css" "scss" "lua" "vim" "yaml"]      
+       ;; :markdown_fenced_languages ["clojure" "html" "json" "css" "scss" "lua" "vim" "yaml"]
        }]
   (each [option value (pairs options)]
     (util.set-global-option option value)))
