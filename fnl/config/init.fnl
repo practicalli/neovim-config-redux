@@ -59,6 +59,8 @@
 
 ;; Help and documentation
 (util.lnnoremap :hh "Telescope help_tags")
+(util.lnnoremap :jh "Telescope heading")
+
 
 ;; Colors and themes
 (util.lnnoremap :cs "Telescope colorscheme")

@@ -11,6 +11,7 @@
               ;; :mappings {:i {:<esc> actions.close}}
               }
    :extensions {:env {}
+                :heading {:treesitter true}
                 :ui-select {1 (themes.get_dropdown {})}
                 :tele_tabby {:use_highlighter false}
                 :packer {}
@@ -19,6 +20,9 @@
 
 ;; Load Extensions
 (telescope.load_extension "env")
+;; List headings with preview in markdown, asciidoc, etc.
+(telescope.load_extension "heading")
+
 (telescope.load_extension "file_browser")
 (telescope.load_extension "packer")
 (telescope.load_extension "ports")

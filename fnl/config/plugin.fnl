@@ -122,6 +122,7 @@
               ;; Extensions
               :nvim-telescope/telescope-file-browser.nvim
               :LinArcX/telescope-env.nvim
+              :crispgm/telescope-heading.nvim
               :LinArcX/telescope-ports.nvim
               :nvim-telescope/telescope-packer.nvim
               :nvim-telescope/telescope-project.nvim
