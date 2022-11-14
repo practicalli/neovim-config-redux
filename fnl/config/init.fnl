@@ -53,7 +53,8 @@
 (util.lnnoremap :fs "write")
 ;; (util.lnnoremap :fc "saveas")  ;; requires an argument before carrage return
 (util.lnnoremap :fe "NvimTreeToggle")
-(util.lnnoremap :pt "TodoTelescope")
+
+(util.lnnoremap :pp "Telescope project")
 (util.lnnoremap :pt "TodoTelescope")
 
 ;; Help and documentation
