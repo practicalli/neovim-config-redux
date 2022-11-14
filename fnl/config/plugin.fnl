@@ -100,7 +100,10 @@
   ;;;; Navigation
 
   ;; project management (lua plugin)
-  :ahmedkhalf/project.nvim {:mod :project}
+  ;; projects cant be created on the fly or renamed it seems
+  ;; use project telescope extention, 
+  ;; rather than the projects telexcope extention project.nvim provides
+  ;; :ahmedkhalf/project.nvim {:mod :project}
 
   ;; peek at a line number
   :nacro90/numb.nvim {:mod :numb}
