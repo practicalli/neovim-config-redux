@@ -164,6 +164,8 @@
   ;; Markdown
   :ixru/nvim-markdown {}
 
+  :simrat39/symbols-outline.nvim {:mod :symbols-outline}
+
   ;; ---------------------
   ;; LISP related features
 
