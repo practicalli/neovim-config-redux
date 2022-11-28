@@ -198,7 +198,9 @@
   :tpope/vim-repeat {}
   :tpope/vim-sexp-mappings-for-regular-people {}
   :tpope/vim-sleuth {}
-  :tpope/vim-surround {}
+  ;; :tpope/vim-surround {}
+  :kylechui/nvim-surround {:mod :nvim-surround}
+
   :tpope/vim-unimpaired {}
 
   ;; semantic visual selection
@@ -207,10 +209,8 @@
   ;; text alignment
   :junegunn/vim-easy-align {:mod :easy-align}
 
-
   ;; multicursor selector
   :mg979/vim-visual-multi {}
-
 
 
   ;; ----------------------
