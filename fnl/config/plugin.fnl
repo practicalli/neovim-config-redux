@@ -65,6 +65,8 @@
   ;; Gruvbox theme with treesitter support
   :luisiacc/gruvbox-baby {}
 
+  :sainnhe/gruvbox-material {}
+
   ;; GitHub themes - dark and light variations configured in plugins/theme.fnl
   :projekt0n/github-nvim-theme {:mod :theme}
 
