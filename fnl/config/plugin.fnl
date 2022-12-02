@@ -245,4 +245,7 @@
 
   :jamessan/vim-gnupg {}
 
+  :akinsho/toggleterm.nvim {:tag "*"
+                            :mod :toggleterm}
+
 )

@@ -89,7 +89,7 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
  - [Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim) *Dockerfile syntax highlighting and snipMate snippets*
  - [terryma/vim-expand-region](https://github.com/terryma/vim-expand-region) *Visually select regions based on semantic units, `+` to expand, `-` to contract *
  - [neoclip](https://github.com/AckslD/nvim-neoclip.lua) *clipboard history - with telescope popup*
-
+ - [akinsho/nvim-toggleterm.lua](https://github.com/akinsho/toggleterm.nvim) - toggle terminal popup window
 
 ### themes
 - [sainnhe/gruvbox-material](https://github.com/sainnhe/gruvbox-material) a softer contrast version of Gruvbox theme `:help gruvbox-material.txt`
@@ -106,7 +106,6 @@ Supporting plugins
 * https://github.com/VonHeikemen/lsp-zero.nvim - simplify use of nvim-cmp and LSP config, install language servers using https://github.com/williamboman/mason.nvim
 * https://github.com/williamboman/mason.nvim - package manger for external editor tools, e.g. LSP & DAP servers, linters, formatters,
  - https://github.com/cappyzawa/trim.nvim - trim whitespace
-- [akinsho/nvim-toggleterm.lua](https://github.com/akinsho/toggleterm.nvim) - toggle terminal popup window
 - [ms-jpq/chadtree](https://github.com/ms-jpq/chadtree) - file manager
 - [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim) - 7
 - [leap.nvim](https://github.com/ggandor/leap.nvim) - general purpose motions for moving around the visible area of buffers

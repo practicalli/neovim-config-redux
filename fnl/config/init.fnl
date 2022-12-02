@@ -20,6 +20,8 @@
 ;; clipboard history
 (util.lnnoremap :ch "Telescope neoclip")
 
+;; terminal
+(util.lnnoremap :. "ToggleTerm") 
 
 ;; Tabs
 (util.lnnoremap :tt "Telescope tele_tabby list") ;; Visual tab switch
