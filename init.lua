@@ -9,6 +9,15 @@ vim.g.loaded_netrwPlugin = 1
 local execute = vim.api.nvim_command
 local fn = vim.fn
 
+-- Language providers
+-- https://practical.li/neovim/reference/neovim/language-providers/
+-- Uncomment to disable a specific provider
+-- vim.g.loaded_node_provider = 0
+-- vim.g.loaded_perl_provider = 0
+-- vim.g.loaded_python3_provider = 0
+-- vim.g.loaded_ruby_provider = 0
+
+-- Packer configuration
 local pack_path = fn.stdpath("data") .. "/site/pack"
 local fmt = string.format
 
