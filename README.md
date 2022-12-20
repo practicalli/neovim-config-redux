@@ -23,10 +23,6 @@ Support has also been provided in the #vim channel of the Clojurians Slack commu
 - [git](https://git-scm.com/downloads)
 - [Neovim 0.8.0](https://neovim.io/) or greater
     - C compiler - e.g. gcc on Linux, clang on Termux(Android) - required for Neovim Treesitter
-- [ripgrep](https://github.com/BurntSushi/ripgrep) to search for files
-- [Clojure CLI](https://clojure.org/)
-- [practicalli/clojure-deps-edn](https://clojure.org/) user level aliases adding a range of community tools
-- [clojure-lsp](https://github.com/clojure-lsp/clojure-lsp) Language Server Protocol implementation for Clojure
 
 > Ubuntu Neovim 0.8.0 Install: use `*.deb` file from [Neovim releases page](https://github.com/neovim/neovim/releases) on GitHub
 
