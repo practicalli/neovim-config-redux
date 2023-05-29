@@ -7,8 +7,14 @@
    :c {:name "Color-clipboard"}
    :e {:name "Errors"}
    :f {:name "Files"
-       :e [":Telescope file_browser<cr>" "Explorer"]
-       :t [":NvimTreeToggle<cr>" "Tree toggle"]}
+       :/ [":Telescope live_grep<cr>" "Grep"]
+       :b [":Telescope file_browser<cr>" "Explorer"]
+       :f [":Telescope find_files<cr>" "Grep"]
+       :s [":write<cr>" "Save"]
+       :t {:name "Tree"
+           :s [":NvimTreeFindFile<cr>" "Select in Tree"]
+           :t [":NvimTreeToggle<cr>" "Tree toggle"]}
+       :D [":call delete(@%) | bdelete!<cr>" "Delete"]}
    :g {:name "Git/Version Control"}
    :h {:name "Help"}
    :i {:name "Insertion"}
@@ -16,7 +22,9 @@
    :l {:name "Layouts"}
    :n {:name "Narrow/Numbers"}
    :o {:name "User Bindings"}
-   :p {:name "Projects"}
+   :p {:name "Projects"
+       :p [":Telescope project<cr>" "Project List"]
+       :t [":TodoTelescope" "TODOs"]}
    :q {:name "Quit"}
    :t {:name "Tabs"}
    :T {:name "Toggle"}
