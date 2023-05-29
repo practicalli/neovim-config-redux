@@ -6,7 +6,7 @@ Currently evaluating AstroNvim configuration which provides an engaging UI and c
 
 [practicalli/astronvim-config](https://github.com/practicalli/astronvim-config) is under active development and already useable for Clojure development.
 
-[Practicalli Neovim book](https://practicalli/neovim) is being updated to use the astronvim configuration.
+[Practicalli Neovim book](https://practical.li/neovim) is being updated to use the astronvim configuration.
 
 Updates and fixes to the practicalli/neovim-config-redux configuration are not planned and eventually this project will be archived.
 
