@@ -447,3 +447,5 @@ Lets try this with some Clojure code
 
 
 😈 `cmd` + `ctrl` + `spc` in Kitty terminal brings up an emoji selector - is this emoji menu MacOS specific ?  How to get this on Linux?
+
+
