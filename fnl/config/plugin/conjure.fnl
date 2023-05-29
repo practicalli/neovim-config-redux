@@ -119,7 +119,7 @@
 
 ;; Evaluate form under the cursor & inserts result as comment.
 ;; Default: `"ece"`
-(set nvim.g.conjure#mapping#eval_comment_current_form "ece")
+;; (set nvim.g.conjure#mapping#eval_comment_current_form "ece")
 
 ;; Evaluate root form under the cursor
 ;; Default: `"er"`
@@ -127,7 +127,7 @@
 
 ;; Evaluate root form under the cursor & insert result as comment
 ;; Default: `"ecr"`
-(set nvim.g.conjure#mapping#eval_comment_root_form "ecf")
+(set nvim.g.conjure#mapping#eval_comment_root_form "e;")
 
 ;; Evaluate word under cursor
 ;; Default: `"ew"`
