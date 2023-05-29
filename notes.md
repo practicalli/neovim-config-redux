@@ -37,3 +37,9 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 ```
+
+## Snippets
+
+Example json based snippets for markdown
+
+https://github.com/rafamadriz/friendly-snippets/blob/main/snippets/markdown.json

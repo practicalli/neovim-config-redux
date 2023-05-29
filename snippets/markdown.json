@@ -1,0 +1,58 @@
+{
+  "mkdocs button tag": {
+    "prefix": "mkdocs-button",
+    "body": ["{.mkdocs-button} ${0}"],
+    "description": "MkDocs Button tag"
+  },
+  "mkdocs button form": {
+    "prefix": "mkdocs-button-form",
+    "body": ["[${1:link text}](${2:URL}){target=_blank .mkdocs-button} ${0}"],
+    "description": "MkDocs Button form"
+  },
+  "mkdocs link target blank tag": {
+    "prefix": "mkdocs-link-target-blank-tag",
+    "body": ["{target=_blank} ${0}"],
+    "description": "MkDocs Link target blank tag"
+  },
+  "mkdocs link form": {
+    "prefix": "mkdocs-link-form",
+    "body": ["[${1:link text}](${2:URL}){target=_blank .mkdocs-button} ${0}"],
+    "description": "MkDocs Link form"
+  },
+  "mkdocs youtube embed": {
+    "prefix": "mkdocs-youtube-embed",
+    "body": ["<p style=\"text-align:center\">\n  <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/${1:url-code}\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</p> ${0}"],
+    "description": "MkDocs YouTube Embed"
+  },
+  "mkdocs icon book": {
+    "prefix": "mkdocs-icon-book",
+    "body": [":fontawesome-solid-book-open:${0}"],
+    "description": "MkDocs link target blank"
+  },
+  "mkdocs icon github": {
+    "prefix": "mkdocs-icon-github",
+    "body": [":fontawesome-brands-github:${0}"],
+    "description": "MkDocs link target blank"
+  },
+  "mkdocs icon globe": {
+    "prefix": "mkdocs-icon-globe",
+    "body": [":globe_with_meridians:${0}"],
+    "description": "MkDocs link target blank"
+  },
+  "mkdocs image github base url": {
+    "prefix": "mkdocs-image-github-base-url",
+    "body": ["https://raw.githubusercontent.com/practicalli/graphic-design/live/${0}"],
+    "description": "MkDocs image GitHub base URL"
+  },
+  "mkdocs image form": {
+    "prefix": "mkdocs-image-form",
+    "body": ["![${1:alternative text}](${2:url}#only-dark#{3}){align=left${4} loading=lazy style=\"height:150px;width:150px\"}${0}"],
+    "description": "MkDocs Image form"
+  },
+  "mkdocs image GitHub form": {
+    "prefix": "mkdocs-image-github-form",
+    "body": ["![${1:alternative text}](https://raw.githubusercontent.com/practicalli/graphic-design/live/${2:URL}#only-dark${3}){align=left${4} loading=lazy style=\"height:150px;width:150px\"}"],
+    "description": "MkDocs Image GitHub form"
+  }
+}
+

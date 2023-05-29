@@ -1,0 +1,16 @@
+{
+  "comment header": {
+    "prefix": "comment-header",
+    "body": [
+      ";; ---------------------------------------------------------\n;; ${1:Heading summary title}\n;;\n;; ${2:Brief description}\n;; ---------------------------------------------------------\n\n$0"
+    ],
+    "description": "Comment Header"
+  },
+  "comment section": {
+    "prefix": "comment-section",
+    "body": [
+      ";; ---------------------------------------------------------\n;; ${1:Section title}\n\n$0\n\n\n;; End of $1\n;; ---------------------------------------------------------\n\n"
+    ],
+    "description": "Comment Header"
+  }
+}

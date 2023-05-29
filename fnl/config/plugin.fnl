@@ -235,7 +235,10 @@
   :mfussenegger/nvim-dap {}
 
   ; snippets
-  :L3MON4D3/LuaSnip {:requires [:saadparwaiz1/cmp_luasnip]}
+  :L3MON4D3/LuaSnip 
+  {:requires [:rafamadriz/friendly-snippets
+              :saadparwaiz1/cmp_luasnip]
+   :mod :lua-snip}
 
   ;; autocomplete
   :hrsh7th/nvim-cmp {:requires [:hrsh7th/cmp-buffer
