@@ -63,25 +63,25 @@
   :yorik1984/newpaper.nvim {:mod :theme-newpaper}
 
   ;; Gruvbox theme with treesitter support
-  :luisiacc/gruvbox-baby {}
+  ;; :luisiacc/gruvbox-baby {}
 
-  :sainnhe/gruvbox-material {}
+  ;; :sainnhe/gruvbox-material {}
 
   ;; GitHub themes - dark and light variations configured in plugins/theme.fnl
-  :projekt0n/github-nvim-theme {:mod :theme}
+  ;; :projekt0n/github-nvim-theme {:mod :theme}
 
   ;; Omni dark theme for Neovim - https://github.com/getomni/neovim
-  :getomni/neovim {}
+  ;; :getomni/neovim {}
 
   ;; Palenightfall dark theme for Neovim - https://github.com/JoosepAlviste/palenightfall.nvim
   ;; DRAGONS: causes treesitter bug when markdown parser enabled
   ;; :JoosepAlviste/palenightfall.nvim {}
 
   ;; One dark & light theme for Neovim - https://github.com/disrupted/one.nvim
-  :disrupted/one.nvim {}
+  ;; :disrupted/one.nvim {}
 
   ;;dark & light theme with wide plugin support
-  :folke/tokyonight.nvim {}
+  ;; :folke/tokyonight.nvim {}
 
   ;; gruvbox theme - to set up plugin/theme.fnl before this works
   ;; :morhetz/gruvbox {:mod :theme-gruvbox}
@@ -92,7 +92,7 @@
   ;; Light theme - may require plugin/theme.fnl or smilar to work
   ;; :ingram1107/vim-zhi {}
 
- :overcache/NeoSolarized {}
+ ;; :overcache/NeoSolarized {}
 
   ;;;; status line
  :nvim-lualine/lualine.nvim
