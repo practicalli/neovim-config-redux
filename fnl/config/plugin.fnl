@@ -108,7 +108,7 @@
   ;; :ahmedkhalf/project.nvim {:mod :project}
 
   ;; peek at a line number
-  :nacro90/numb.nvim {:mod :numb}
+ :nacro90/numb.nvim {:mod :numb}
 
   ;; Projects and file navigation
   :kyazdani42/nvim-tree.lua
@@ -249,6 +249,6 @@
   :jamessan/vim-gnupg {}
 
   :akinsho/toggleterm.nvim {:tag "*"
-                            :mod :toggleterm}
+                            :mod :toggleterm})
 
-)
+

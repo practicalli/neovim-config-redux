@@ -10,4 +10,4 @@
 
 (orgmode.setup
  {:org_agenda_files {"~/Documents/org/*" "~/projects/**/*"}
-  :org_default_notes_file  "~/Documents/org/refile.org"})
+  :org_default_notes_file "~/Documents/org/refile.org"})

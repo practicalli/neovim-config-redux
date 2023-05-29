@@ -21,7 +21,7 @@
 (util.lnnoremap :ch "Telescope neoclip")
 
 ;; terminal
-(util.lnnoremap :. "ToggleTerm") 
+(util.lnnoremap :. "ToggleTerm")
 
 ;; Tabs
 (util.lnnoremap :tt "Telescope tele_tabby list") ;; Visual tab switch
@@ -205,10 +205,15 @@
 
        ;; syntax highlight code blocks in markdown
        ;; :markdown_fenced_languages ["clojure" "html" "json" "css" "scss" "lua" "vim" "yaml"]
+
        }]
   (each [option value (pairs options)]
     (util.set-global-option option value)))
 
+;; ------------ Global variables
+
+;; Disable Language Providers to remove warning in :checkhealth
+;; (util.set-global-variable loaded_perl_provider 0)
 
 ;import plugin.fnl
 (require :config.plugin)
