@@ -1,8 +1,17 @@
 # [Practicalli Neovim](https://practical.li/neovim/) Configuration
 
-**PROJECT ON HOLD** 
-Considering a rewrite of the config, using lazy package manager and a minimum of Neovim 9
+## PROJECT ON HOLD
 
+Currently evaluating AstroNvim configuration which provides an engaging UI and clearer plugin management using lazy package manager, with Mason managing LSP servers, format and lint tooling.  
+
+[practicalli/astronvim-config](https://github.com/practicalli/astronvim-config) is under active development and already useable for Clojure development.
+
+[Practicalli Neovim book](https://practicalli/neovim) is being updated to use the astronvim configuration.
+
+Updates and fixes to the practicalli/neovim-config-redux configuration are not planned and eventually this project will be archived.
+
+
+## Overview
 
 A Fennel configuration for Neovim 0.8.0 or greater, with a focus on Clojure REPL driven development with Conjure as well as general development workflow. A complete configuration to transform your Neovim in a simple, powerful and fun to use Clojure IDE
 
@@ -24,13 +33,13 @@ Support has also been provided in the #vim channel of the Clojurians Slack commu
 
 ## Prerequisites
 
-- [git](https://git-scm.com/downloads)
-- [Neovim 0.8.0](https://neovim.io/) or greater
-    - C compiler - e.g. gcc on Linux, clang on Termux(Android) - required for Neovim Treesitter
-- [ripgrep](https://github.com/BurntSushi/ripgrep) to search for files
-- [Clojure CLI](https://clojure.org/)
-- [practicalli/clojure-deps-edn](https://clojure.org/) user level aliases adding a range of community tools
-- [clojure-lsp](https://github.com/clojure-lsp/clojure-lsp) Language Server Protocol implementation for Clojure
+* [git](https://git-scm.com/downloads)
+* [Neovim 0.8.0](https://neovim.io/) or greater
+  * C compiler - e.g. gcc on Linux, clang on Termux(Android) - required for Neovim Treesitter
+* [ripgrep](https://github.com/BurntSushi/ripgrep) to search for files
+* [Clojure CLI](https://clojure.org/)
+* [practicalli/clojure-deps-edn](https://clojure.org/) user level aliases adding a range of community tools
+* [clojure-lsp](https://github.com/clojure-lsp/clojure-lsp) Language Server Protocol implementation for Clojure
 
 > Ubuntu Neovim 0.8.0 Install: use `*.deb` file from [Neovim releases page](https://github.com/neovim/neovim/releases) on GitHub
 
@@ -44,6 +53,7 @@ mv  $HOME/.config/nvim  $HOME/backup/nvim
 ```
 
 Clone the repository to the `$HOME/.config/nvim` directory
+
 ```bash
 git clone git@github.com:practicalli/neovim-config-redux.git $HOME/.config/nvim
 ```
@@ -63,95 +73,100 @@ All the plugins declared in `fnl/config/plugin.fnl` should be installed
 > Should errors persist, try `:PackerUpdate` in neovim and quit / restart.
 
 ## Plugins
- - [packer](https://github.com/wbthomason/packer.nvim) *Plugin/package management*
- - [aniseed](https://github.com/Olical/aniseed) *Bridges between fennel and nvim*
- - [conjure](https://github.com/Olical/conjure) *Interactive repl based evaluation for nvim*
- - [telescope](https://github.com/nvim-telescope/telescope.nvim) *Find, Filter, Preview, Pick*
-   - [telescope-file-browser](https://github.com/nvim-telescope/telescope-file-browser.nvim) *file management - create, delete, rename and move files and directories*
-   - [telescope-env](https://github.com/LinArcX/telescope-env.nvim) *list/search environment variables*
-   - [telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim) *list, switch between, create and delete projects*
-   - [ports](https://github.com/LinArcX/telescope-ports.nvim) *show ports being used and kill associated processes*
-   - [telescope-headings](https://github.com/crispgm/telescope-heading.nvim) - jump to headings in markdown, asciidoc, etc.
-   - [telescope-terraform-doc](https://github.com/ANGkeith/telescope-terraform-doc.nvim) - search for terraform docs, open in browser
- - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) *Incremental parsing system for highlighting, indentation, or folding*
- - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) *Quickstart configurations for the Nvim LSP client*
- - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) *Autocompletion plugin*
- - [github-nvim-theme](https://github.com/projekt0n/github-nvim-theme) *Github theme for Neovim*
- - [tpope-vim-sexp-bundle](https://github.com/tpope/vim-sexp-mappings-for-regular-people) *sexp mappings for regular people*
- - [lualine](https://github.com/nvim-lualine/lualine.nvim) *neovim statusline plugin written in pure lua*
- - [luasnip](https://github.com/L3MON4D3/LuaSnip) *Snippet Engine for Neovim written in Lua.*
- - [startup](https://github.com/startup-nvim/startup.nvim) *startup themes - using default dashboard*
- - [simrat39/symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim) - tree view of symbols using LSP
- - [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim) *GitHub Issues & PRs via GitHub CLI*
- - [nvim-comment](https://github.com/terrortylor/nvim-comment) *toggle line comments with visual selection and motions* (replaces [tpope/commentary.vim](https://github.com/tpope/vim-commentary))
- - [Todo Comments](https://github.com/folke/todo-comments.nvim) *Highlight and search for todo comments (TODO, NOTE, WARNING, FIX, HACK, PERF - specify in options)*
- - [neogit](https://github.com/TimUntersberger/neogit) *Magit clone - WIP with lots of useful features already*
- - [octo](https://github.com/pwntester/octo.nvim) *GitHub Issues and Pull Requests*
- - [orgmode](https://github.com/nvim-orgmode/orgmode) *excellent note taking and agenda management*
- - [tpope/fugitive](https://github.com/tpope/vim-fugitive) *Git command line* installed, no key bindings yet (using neogit instead - although may need both)
- - [gitsigns](https://github.com/lewis6991/gitsigns.nvim) *Git highlights in gutter - adding fugitive controls*
- - [Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim) *Dockerfile syntax highlighting and snipMate snippets*
- - [terryma/vim-expand-region](https://github.com/terryma/vim-expand-region) *Visually select regions based on semantic units, `+` to expand, `-` to contract *
- - [neoclip](https://github.com/AckslD/nvim-neoclip.lua) *clipboard history - with telescope popup*
- - [akinsho/nvim-toggleterm.lua](https://github.com/akinsho/toggleterm.nvim) - toggle terminal popup window
+
+* [packer](https://github.com/wbthomason/packer.nvim) *Plugin/package management*
+* [aniseed](https://github.com/Olical/aniseed) *Bridges between fennel and nvim*
+* [conjure](https://github.com/Olical/conjure) *Interactive repl based evaluation for nvim*
+* [telescope](https://github.com/nvim-telescope/telescope.nvim) *Find, Filter, Preview, Pick*
+  * [telescope-file-browser](https://github.com/nvim-telescope/telescope-file-browser.nvim) *file management - create, delete, rename and move files and directories*
+  * [telescope-env](https://github.com/LinArcX/telescope-env.nvim) *list/search environment variables*
+  * [telescope-project.nvim](https://github.com/nvim-telescope/telescope-project.nvim) *list, switch between, create and delete projects*
+  * [ports](https://github.com/LinArcX/telescope-ports.nvim) *show ports being used and kill associated processes*
+  * [telescope-headings](https://github.com/crispgm/telescope-heading.nvim) - jump to headings in markdown, asciidoc, etc.
+  * [telescope-terraform-doc](https://github.com/ANGkeith/telescope-terraform-doc.nvim) - search for terraform docs, open in browser
+* [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) *Incremental parsing system for highlighting, indentation, or folding*
+* [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) *Quickstart configurations for the Nvim LSP client*
+* [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) *Autocompletion plugin*
+* [github-nvim-theme](https://github.com/projekt0n/github-nvim-theme) *Github theme for Neovim*
+* [tpope-vim-sexp-bundle](https://github.com/tpope/vim-sexp-mappings-for-regular-people) *sexp mappings for regular people*
+* [lualine](https://github.com/nvim-lualine/lualine.nvim) *neovim statusline plugin written in pure lua*
+* [luasnip](https://github.com/L3MON4D3/LuaSnip) *Snippet Engine for Neovim written in Lua.*
+* [startup](https://github.com/startup-nvim/startup.nvim) *startup themes - using default dashboard*
+* [simrat39/symbols-outline.nvim](https://github.com/simrat39/symbols-outline.nvim) - tree view of symbols using LSP
+* [pwntester/octo.nvim](https://github.com/pwntester/octo.nvim) *GitHub Issues & PRs via GitHub CLI*
+* [nvim-comment](https://github.com/terrortylor/nvim-comment) *toggle line comments with visual selection and motions* (replaces [tpope/commentary.vim](https://github.com/tpope/vim-commentary))
+* [Todo Comments](https://github.com/folke/todo-comments.nvim) *Highlight and search for todo comments (TODO, NOTE, WARNING, FIX, HACK, PERF - specify in options)*
+* [neogit](https://github.com/TimUntersberger/neogit) *Magit clone - WIP with lots of useful features already*
+* [octo](https://github.com/pwntester/octo.nvim) *GitHub Issues and Pull Requests*
+* [orgmode](https://github.com/nvim-orgmode/orgmode) *excellent note taking and agenda management*
+* [tpope/fugitive](https://github.com/tpope/vim-fugitive) *Git command line* installed, no key bindings yet (using neogit instead - although may need both)
+* [gitsigns](https://github.com/lewis6991/gitsigns.nvim) *Git highlights in gutter - adding fugitive controls*
+* [Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim) *Dockerfile syntax highlighting and snipMate snippets*
+* [terryma/vim-expand-region](https://github.com/terryma/vim-expand-region) *Visually select regions based on semantic units, `+` to expand, `-` to contract*
+* [neoclip](https://github.com/AckslD/nvim-neoclip.lua) *clipboard history - with telescope popup*
+* [akinsho/nvim-toggleterm.lua](https://github.com/akinsho/toggleterm.nvim) - toggle terminal popup window
 
 ### themes
-- [sainnhe/gruvbox-material](https://github.com/sainnhe/gruvbox-material) a softer contrast version of Gruvbox theme `:help gruvbox-material.txt`
-- [feline-nvim/feline.nvim](https://github.com/feline-nvim/feline.nvim) - status bar theme
+
+* [sainnhe/gruvbox-material](https://github.com/sainnhe/gruvbox-material) a softer contrast version of Gruvbox theme `:help gruvbox-material.txt`
+* [feline-nvim/feline.nvim](https://github.com/feline-nvim/feline.nvim) - status bar theme
 
 Supporting plugins
-- https://github.com/folke/trouble.nvim supports Todo Comments
-- https://github.com/folke/lsp-colors.nvim
+
+* <https://github.com/folke/trouble.nvim> supports Todo Comments
+* <https://github.com/folke/lsp-colors.nvim>
 
 <!-- TODO: plugins to add -->
 * [nvim-neorg/neorg](https://github.com/nvim-neorg/neorg) - a variation on org mode for neovim - neovim 0.8.* required
 * [mfussenegger/nvim-dap](https://github.com/mfussenegger/nvim-dap) *Debug Adapter Protocol client* - neovim 8.0 required
   * [ktock/buildg](https://github.com/ktock/buildg) *DAP for Dockerfile*
-* https://github.com/VonHeikemen/lsp-zero.nvim - simplify use of nvim-cmp and LSP config, install language servers using https://github.com/williamboman/mason.nvim
-* https://github.com/williamboman/mason.nvim - package manger for external editor tools, e.g. LSP & DAP servers, linters, formatters,
- - https://github.com/cappyzawa/trim.nvim - trim whitespace
-- [ms-jpq/chadtree](https://github.com/ms-jpq/chadtree) - file manager
-- [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim) - 7
-- [leap.nvim](https://github.com/ggandor/leap.nvim) - general purpose motions for moving around the visible area of buffers
-- https://github.com/cappyzawa/trim.nvim - trim whitespace
+* <https://github.com/VonHeikemen/lsp-zero.nvim> - simplify use of nvim-cmp and LSP config, install language servers using <https://github.com/williamboman/mason.nvim>
+* <https://github.com/williamboman/mason.nvim> - package manger for external editor tools, e.g. LSP & DAP servers, linters, formatters,
 
-* https://github.com/gbprod/yanky.nvim#%EF%B8%8F-yank-ring - cycle through kill ring (and other stuff)
+* <https://github.com/cappyzawa/trim.nvim> - trim whitespace
+* [ms-jpq/chadtree](https://github.com/ms-jpq/chadtree) - file manager
+* [ggandor/lightspeed.nvim](https://github.com/ggandor/lightspeed.nvim) - 7
+* [leap.nvim](https://github.com/ggandor/leap.nvim) - general purpose motions for moving around the visible area of buffers
+* <https://github.com/cappyzawa/trim.nvim> - trim whitespace
 
- - [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim) motions (replacement for lightspeed), alternative to easy-motions ??
- - [kevinhwang91/rnvimr](https://github.com/kevinhwang91/rnvimr) *ranger in a floating window*
- - [dadbod.vim](https://github.com/tpope/vim-dadbod) interact with database - connect `:DB postgresql:///connection-string` or run a single expression
- - [vim-dadbob-ui](https://github.com/kristijanhusak/vim-dadbod-ui) - navigate database connections and save queries
- - [heroku.vim](https://github.com/tpope/vim-heroku) wraps the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) and provides tab complete of commands
- - [p00f/nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) *treesitter based rainbow parens*
+* <https://github.com/gbprod/yanky.nvim#%EF%B8%8F-yank-ring> - cycle through kill ring (and other stuff)
 
- - https://github.com/ruifm/gitlinker.nvim share github links
+* [ggandor/leap.nvim](https://github.com/ggandor/leap.nvim) motions (replacement for lightspeed), alternative to easy-motions ??
+* [kevinhwang91/rnvimr](https://github.com/kevinhwang91/rnvimr) *ranger in a floating window*
+* [dadbod.vim](https://github.com/tpope/vim-dadbod) interact with database - connect `:DB postgresql:///connection-string` or run a single expression
+* [vim-dadbob-ui](https://github.com/kristijanhusak/vim-dadbod-ui) - navigate database connections and save queries
+* [heroku.vim](https://github.com/tpope/vim-heroku) wraps the [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) and provides tab complete of commands
+* [p00f/nvim-ts-rainbow](https://github.com/p00f/nvim-ts-rainbow) *treesitter based rainbow parens*
+
+* <https://github.com/ruifm/gitlinker.nvim> share github links
 
 
 #### Telescope extensions to try
 
-* https://github.com/nvim-neorg/neorg-telescope
-* https://github.com/nvim-telescope/telescope-hop.nvim
-* https://github.com/smartpde/telescope-recent-files
-* https://github.com/FeiyouG/command_center.nvim
-* https://github.com/LinArcX/telescope-changes.nvim
-* https://github.com/LinArcX/telescope-command-palette.nvim
-* https://github.com/ghassan0/telescope-glyph.nvim
-* https://github.com/xiyaowong/telescope-emoji.nvim
+* <https://github.com/nvim-neorg/neorg-telescope>
+* <https://github.com/nvim-telescope/telescope-hop.nvim>
+* <https://github.com/smartpde/telescope-recent-files>
+* <https://github.com/FeiyouG/command_center.nvim>
+* <https://github.com/LinArcX/telescope-changes.nvim>
+* <https://github.com/LinArcX/telescope-command-palette.nvim>
+* <https://github.com/ghassan0/telescope-glyph.nvim>
+* <https://github.com/xiyaowong/telescope-emoji.nvim>
 *
-* https://github.com/aloussase/telescope-maven-search - search Maven Central - maybe useful for finding jdbc driver versions, postgresql
-* https://github.com/chip/telescope-software-licenses.nvim - search for open source licenses
-* https://github.com/LukasPietzschmann/telescope-tabs - switch between and close tabs, optional preview
+* <https://github.com/aloussase/telescope-maven-search> - search Maven Central - maybe useful for finding jdbc driver versions, postgresql
+* <https://github.com/chip/telescope-software-licenses.nvim> - search for open source licenses
+* <https://github.com/LukasPietzschmann/telescope-tabs> - switch between and close tabs, optional preview
 
 ## Neovim configurations
-- [NvChad](https://nvchad.com/)
-- [LunaVim](https://www.lunarvim.org/)
-- [CodeArt](https://github.com/artart222/CodeArt)
-- [Astro Nvim](https://astronvim.github.io/)
+
+* [NvChad](https://nvchad.com/)
+* [LunaVim](https://www.lunarvim.org/)
+* [CodeArt](https://github.com/artart222/CodeArt)
+* [Astro Nvim](https://astronvim.github.io/)
 
 
 ## Plugin Not used
 
-* https://github.com/nvim-telescope/telescope-github.nvim - use Octo
+* <https://github.com/nvim-telescope/telescope-github.nvim> - use Octo
 * ntpeters/vim-better-whitespace - vim plugin Whitespace hightlighting / removal - overly complicated to configure in fennel
 
 
@@ -170,7 +185,7 @@ Telescope and project plugin
 
 TODO: configure telescope to respect the global gitignore patterns
 
-Project key bindings - https://github.com/nvim-telescope/telescope-project.nvim#default-mappings-normal-mode
+Project key bindings - <https://github.com/nvim-telescope/telescope-project.nvim#default-mappings-normal-mode>
 
 
 ## Comments
@@ -198,6 +213,7 @@ Neogit provides a Magit style client.
 `<leader>gs` opens Git Status, by running `:Neogit`
 
 Other commands to map
+
 ```
 :Neogit kind=<kind> " override kind
 :Neogit cwd=<cwd> " override cwd
@@ -215,6 +231,7 @@ TODO: Review [Octo.nvim configuration settings](https://github.com/pwntester/oct
 Command line form: `Octo <object> <action> [arguments]` - [Object, Action and Arguments commands](https://github.com/pwntester/octo.nvim#-commands)
 
 List issues from current project (optionally add a specific repository)
+
 ```sh
 :Octo issue list
 ```
@@ -226,6 +243,7 @@ Create a pull requests from current project
 ```
 
 Add a comment to the current topic (issue/pr)
+
 ```sh
 :Octo comment add
 
@@ -238,74 +256,86 @@ Add a comment to the current topic (issue/pr)
 ## Files
 
 ## [init.lua](init.lua)
+
 Wrapper responsible for two things:
-  - Download and setup our package manager ([packer.nvim](https://github.com/wbthomason/packer.nvim)) and our fennel helper/interface ([aniseed](https://github.com/Olical/aniseed))
-  - Set the entrypoint for NVIM read our config files, in our case `fnl/config/init.fnl`.
+
+* Download and setup our package manager ([packer.nvim](https://github.com/wbthomason/packer.nvim)) and our fennel helper/interface ([aniseed](https://github.com/Olical/aniseed))
+* Set the entrypoint for NVIM read our config files, in our case `fnl/config/init.fnl`.
 
 ## [fnl/config/init.fnl](fnl/config/init.fnl)
-- Set basic global vim configurations and general keymaps.
-- Load plugin configuration namespace.
+
+* Set basic global vim configurations and general keymaps.
+* Load plugin configuration namespace.
 
 > In this file among other settings I do set the leader key as `space` and local-leader as `,` for the sake of the examples of how use this configuration I will use this as basis for the commands.
 
 
 ## [fnl/config/plugin.fnl](fnl/config/plugin.fnl)
+
 Here we define the plugins we want packer to download and load for us, we define here a private function called `use`
 which will search in the plugin map for the keyword `:mod` and load the namespace defined in its value.
 
 For example in the line we define that we need telescope we have this map:
+
 ```clojure
   :nvim-telescope/telescope.nvim
   {:requires [:nvim-lua/popup.nvim
               :nvim-lua/plenary.nvim]
    :mod :telescope}
 ```
+
 This will state to packer download `nvim-telescope/telescope.nvim` and all the required plugins in `:requires` and search for the namespace `telescope`
 in file located in the following path `fnl/config/plugin/telescope`, where I usually add plugin specific configuration like keymaps and settings.
 
 ## [fnl/config/plugin/conjure.fnl](fnl/config/plugin/conjure.fnl)
+
 Conjure specifics settings, I like to remap the doc work keymap to be `<localleader>K` instead the only `K`, to not conflict with the LSP docs `K`.
 
 ## [fnl/config/plugin/telescope.fnl](fnl/config/plugin/telescope.fnl)
+
 Settings like ignore `node_modules` and everything in `.gitignore` to be listed in the file finder.
 Keymaps:
- - `<leader>pf` open the find files
- - `<leader>p/` open the fuzzy finder
- - `<leader>bb` open the find open buffer
- - `<leader>h/` open the nvim help fuzzy finder
+
+* `<leader>pf` open the find files
+* `<leader>p/` open the fuzzy finder
+* `<leader>bb` open the find open buffer
+* `<leader>h/` open the nvim help fuzzy finder
 
 ## [fnl/config/plugin/treesitter.fnl](fnl/config/plugin/treesitter.fnl)
+
 Settings to select which treesitter's features we want enabled and which language extension we want to ensure they will be always installed.
 
 ## [fnl/config/plugin/lspconfig.fnl](fnl/config/plugin/lspconfig.fnl)
+
 All about nvim's lsp settings and keymaps.
 
 ### LSP Configuration
 
-- In the first session, we define which symbols to show for lsp diagnostics.
-- Later we describe which features and server settings we want to enable/customize.
-  - Handler defines features and how we want to render the server outputs.
-  - Capabilities we link with our autocompletion plugin (nvim-cmp), to say to the lsp servers that we have this feature enabled.
-  - On_Attach we customize our interaction with the LSP server, here we define the following keymaps:
-    - `gd` Go to definition
-    - `K` Show documentations
-    - `<leader>ld` Function declarations
-    - `<leader>lt` Type Definitions
-    - `<leader>lh` Signature Help
-    - `<leader>ln` Rename
-    - `<leader>le` Show line diagnostics
-    - `<leader>lq` Show all diagnostics information
-    - `<leader>lf` Auto format
-    - `<leader>lj` Go to next diagnostic
-    - `<leader>lk` Go to previous diagnostic
-    - `<leader>la` Open code actions menu (Using telescope plugin interface)
-    - `<leader>la` Open code actions menu for the selected text in **VISUAL mode** (Using telescope plugin interface)
-    - `<leader>lw` Open workspace diagnostics list (Using telescope plugin interface)
-    - `<leader>lr` Show all references list for item under the cursor (Using telescope plugin interface)
-    - `<leader>lr` Show all implementations list for item under the cursor (Using telescope plugin interface)
-- Lastly we configure to use all settings above in clojure-lsp server instance.
+* In the first session, we define which symbols to show for lsp diagnostics.
+* Later we describe which features and server settings we want to enable/customize.
+  * Handler defines features and how we want to render the server outputs.
+  * Capabilities we link with our autocompletion plugin (nvim-cmp), to say to the lsp servers that we have this feature enabled.
+  * On_Attach we customize our interaction with the LSP server, here we define the following keymaps:
+    * `gd` Go to definition
+    * `K` Show documentations
+    * `<leader>ld` Function declarations
+    * `<leader>lt` Type Definitions
+    * `<leader>lh` Signature Help
+    * `<leader>ln` Rename
+    * `<leader>le` Show line diagnostics
+    * `<leader>lq` Show all diagnostics information
+    * `<leader>lf` Auto format
+    * `<leader>lj` Go to next diagnostic
+    * `<leader>lk` Go to previous diagnostic
+    * `<leader>la` Open code actions menu (Using telescope plugin interface)
+    * `<leader>la` Open code actions menu for the selected text in **VISUAL mode** (Using telescope plugin interface)
+    * `<leader>lw` Open workspace diagnostics list (Using telescope plugin interface)
+    * `<leader>lr` Show all references list for item under the cursor (Using telescope plugin interface)
+    * `<leader>lr` Show all implementations list for item under the cursor (Using telescope plugin interface)
+* Lastly we configure to use all settings above in clojure-lsp server instance.
 
 ### [fnl/config/plugin/cmp.fnl](fnl/config/plugin/cmp.fnl)
+
 Here settings of which sources we want to show up in the autocomple menu like (conjure, lsp, buffer) and some mapping to navigate in the menu.
 
 ## [fnl/config/plugin/theme.fnl](fnl/config/plugin/theme.fnl)
@@ -338,54 +368,67 @@ The Neovim GitHub theme includes definitions to set the look of the status line.
 ## Neovim in action
 
 ### Telescope - Find Files
+
 ![telescope-find-files](docs/telescope-find-files.gif)
 **`<leader>ff`**
 
 ### Lsp - Syntax check
+
 ![lsp-syntax-check](docs/lsp-syntax-check.gif)
 **`<leader>le`**
 
 ### Lsp - Go to definition
+
 ![lsp-go-to-definition](docs/lsp-go-to-definition.gif)
 **`gd`**
 
 ### Lsp - Document/Signature Help
+
 ![lsp-document](docs/lsp-document.gif)
 **`K`/`<leader>lh`**
 
 ### Lsp - Find definition/references
+
 ![lsp-find-references](docs/lsp-find-references.gif)
 **`<leader>lr`**
 
 ### Lsp - Formatting
+
 ![lsp-format](docs/lsp-format.gif)
 **`<leader>lf`**
 
 ### Lsp - Code actions
+
 ![lsp-code-actions](docs/lsp-code-actions.gif)
 **`<leader>la`**
 
 ### Lsp - Refactorings
+
 ![lsp-refactorings](docs/lsp-refactorings.gif)
 **`<leader>la`**
 
 ### Lsp - Rename
+
 ![lsp-rename](docs/lsp-rename.gif)
 **`<leader>ln`**
 
 ### Conjure - Eval
+
 ![conjure-eval](docs/conjure-eval.gif)
 **`<localleader>er`**
 
 ### Conjure - Repl
+
 ![conjure-repl](docs/conjure-repl.gif)
 **`<localleader>lv`**
 
 ### Conjure - Document
+
 ![conjure-document](docs/conjure-document.gif)
 **`<localleader>K`**
 
 ### Completion
+
 ![auto-complete](docs/auto-complete.gif)
 
 ## Contributing
@@ -415,7 +458,7 @@ Creative Commons Attribution Share-Alike 4.0 International
 `ve` select to end of word
 
 
-## Where is...
+## Where is
 
 Where is the neovim configuration?
 
@@ -424,11 +467,12 @@ Where is the neovim configuration?
 ```
 
 
-
 ## Configuration to try
 
 syntax highlight code block in markdown - built-in neovim
-- does this actually need setting in neovim - some basic highlighting already happens without it.
+
+* does this actually need setting in neovim - some basic highlighting already happens without it.
+
 ```vim
 -- Give me some fenced codeblock goodness
 g.markdown_fenced_languages = { "html", "javascript", "typescript", "css", "scss", "lua", "vim" }
@@ -447,5 +491,3 @@ Lets try this with some Clojure code
 
 
 😈 `cmd` + `ctrl` + `spc` in Kitty terminal brings up an emoji selector - is this emoji menu MacOS specific ?  How to get this on Linux?
-
-
