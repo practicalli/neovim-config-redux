@@ -62,6 +62,8 @@
 
 ;; Colors and themes
 (util.lnnoremap :cs "Telescope colorscheme")
+(util.lnnoremap :cd "NewpaperDark")
+(util.lnnoremap :cl "NewpaperLight")
 
 ;; Package Manager
 ;; list packages
