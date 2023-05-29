@@ -1,4 +1,4 @@
-# [Practicalli Neovim](https://practical.li/neovim/) Configuration
+# Practicalli Neovim Configuration
 
 ## PROJECT ON HOLD
 
