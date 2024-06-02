@@ -5,8 +5,6 @@ practicalli/neovim-config-redux will be archived as the author of Aniseed is mak
 
 Practicalli currently uses AstroNvim with a [custom user-config](https://github.com/practicalli/astronvim-config), which provides an engaging UI and clearer plugin management using lazy package manager, with Mason managing LSP servers, format and lint tooling.  
 
-[practicalli/astronvim-config](https://github.com/practicalli/astronvim-config) is under active development and already useable for Clojure development.
-
 [Practicalli Neovim book](https://practical.li/neovim) is being updated to use the astronvim configuration.
 
 ## Overview
