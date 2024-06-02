@@ -1,11 +1,12 @@
 # Practicalli Neovim Configuration
 
-## ARCHIVING PROJECT 
-practicalli/neovim-config-redux will be archived as the author of Aniseed is making a significant change to how Fennel is used and creating the [nfnl project](https://github.com/olical/nfnl). A new fennel based configuration may be created in the future to replace this project.  
+## ARCHIVED PROJECT 
+practicalli/neovim-config-redux is now archived project.  
 
-Practicalli currently uses AstroNvim with a [custom user-config](https://github.com/practicalli/astronvim-config), which provides an engaging UI and clearer plugin management using lazy package manager, with Mason managing LSP servers, format and lint tooling.  
+[Practicalli Neovim book](https://practical.li/neovim) was updated to use the AstroNvim configuration for Neovim, providing a wide range of plugins with a highly flexible configuration via the Lazy Package plugin manager.
 
-[Practicalli Neovim book](https://practical.li/neovim) is being updated to use the astronvim configuration.
+The author of Aniseed is making a significant change to how Fennel is used and creating the [nfnl project](https://github.com/olical/nfnl). A new fennel based configuration may be created in the future to replace this project (although it woud be a huge investment to replicate everything that AstroNvim provides).
+
 
 ## Overview
 
