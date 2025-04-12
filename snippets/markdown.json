@@ -1,12 +1,17 @@
 {
   "mkdocs button tag": {
     "prefix": "mkdocs-button",
-    "body": ["{.mkdocs-button} ${0}"],
+    "body": ["{.md-button} ${0}"],
     "description": "MkDocs Button tag"
+  },
+  "mkdocs button target blank tag": {
+    "prefix": "mkdocs-link-target-blank-tag",
+    "body": ["{target=_blank .md-button} ${0}"],
+    "description": "MkDocs Button target blank tag"
   },
   "mkdocs button form": {
     "prefix": "mkdocs-button-form",
-    "body": ["[${1:link text}](${2:URL}){target=_blank .mkdocs-button} ${0}"],
+    "body": ["[${1:link text}](${2:URL}){target=_blank .md-button} ${0}"],
     "description": "MkDocs Button form"
   },
   "mkdocs link target blank tag": {
@@ -21,7 +26,9 @@
   },
   "mkdocs youtube embed": {
     "prefix": "mkdocs-youtube-embed",
-    "body": ["<p style=\"text-align:center\">\n  <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/${1:url-code}\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</p> ${0}"],
+    "body": [
+      "<p style=\"text-align:center\">\n  <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/${1:url-code}\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>\n</p> ${0}"
+    ],
     "description": "MkDocs YouTube Embed"
   },
   "mkdocs icon book": {
@@ -41,18 +48,23 @@
   },
   "mkdocs image github base url": {
     "prefix": "mkdocs-image-github-base-url",
-    "body": ["https://raw.githubusercontent.com/practicalli/graphic-design/live/${0}"],
+    "body": [
+      "https://raw.githubusercontent.com/practicalli/graphic-design/live/${0}"
+    ],
     "description": "MkDocs image GitHub base URL"
   },
   "mkdocs image form": {
     "prefix": "mkdocs-image-form",
-    "body": ["![${1:alternative text}](${2:url}#only-dark#{3}){align=left${4} loading=lazy style=\"height:150px;width:150px\"}${0}"],
+    "body": [
+      "![${1:alternative text}](${2:url}#only-dark#{3}){align=left${4} loading=lazy style=\"height:150px;width:150px\"}${0}"
+    ],
     "description": "MkDocs Image form"
   },
   "mkdocs image GitHub form": {
     "prefix": "mkdocs-image-github-form",
-    "body": ["![${1:alternative text}](https://raw.githubusercontent.com/practicalli/graphic-design/live/${2:URL}#only-dark${3}){align=left${4} loading=lazy style=\"height:150px;width:150px\"}"],
+    "body": [
+      "![${1:alternative text}](https://raw.githubusercontent.com/practicalli/graphic-design/live/${2:URL}#only-dark${3}){align=left${4} loading=lazy style=\"height:150px;width:150px\"}"
+    ],
     "description": "MkDocs Image GitHub form"
   }
 }
-
